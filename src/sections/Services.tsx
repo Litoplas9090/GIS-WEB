@@ -8,28 +8,28 @@ const services = [
   {
     id: "electronicos",
     title: "Proyectos Electrónicos",
-    image: "/gis_electronicos.jpg",
+    image: "/gis_electronicos.webp",
     features: ["Automatización y control industrial", "Instrumentación y sensorización", "Sistemas de comunicación y redes", "Seguridad electrónica y cámaras", "Mantenimiento de PLCs"],
     desc: "Sistemas avanzados con cámaras, sensores y automatización para control industrial."
   },
   {
     id: "mecanicos",
     title: "Proyectos Mecánicos",
-    image: "/gis_mecanicos.jpg",
+    image: "/gis_mecanicos.webp",
     features: ["Mecánica industrial pesada", "Mantenimiento de rodamientos", "Motores de combustión interna", "Ventilación y climatización", "Sistemas hidráulicos y neumáticos"],
     desc: "Mantenimiento profundo de motores, rodamientos y sistemas de mecánica industrial."
   },
   {
     id: "electricos",
     title: "Proyectos Eléctricos",
-    image: "/gis_electricos.jpg",
+    image: "/gis_electricos.webp",
     features: ["Montaje de tableros eléctricos", "Mantenimiento de subestaciones", "Gestión de energías renovables", "Líneas de media y baja tensión"],
     desc: "Montaje, mantenimiento de tableros industriales y soluciones en energías renovables."
   },
   {
     id: "integracion",
     title: "Integración de Proyectos",
-    image: "/gis_integracion.jpg",
+    image: "/gis_integracion.webp",
     features: ["Eléctrica", "Mecánica", "Metalmecánica", "Electrónica"],
     desc: "Desarrollamos soluciones completas integrando múltiples disciplinas."
   }
