@@ -8,17 +8,17 @@ const slides = [
   {
     title: "INGENIERÍA SEGURA",
     subtitle: "Desarrollo de proyectos industriales, comerciales y residenciales bajo los más altos estándares.",
-    image: "/gis_hero.webp",
+    image: "/real/real_img_29.webp",
   },
   {
     title: "EFICIENCIA ENERGÉTICA",
     subtitle: "Soluciones sostenibles que optimizan recursos y protegen el medio ambiente.",
-    image: "/gis_electricos.webp",
+    image: "/real/real_img_2.webp",
   },
   {
     title: "TALENTO CERTIFICADO",
     subtitle: "Personal técnico calificado con amplia experiencia en el sector eléctrico, mecánico y electrónico.",
-    image: "/gis_infraestructura.webp",
+    image: "/real/real_img_3.webp",
   }
 ];
 

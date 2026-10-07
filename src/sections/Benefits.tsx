@@ -6,22 +6,22 @@ import Image from "next/image";
 const equipment = [
   {
     title: "Trabajo en altura",
-    image: "/gis_altura.webp",
+    image: "/real/real_img_16.webp",
     desc: "Personal con arnés de seguridad, eslingas, escaleras y andamios certificados."
   },
   {
     title: "Respaldo energético",
-    image: "/gis_respaldo_energetico.webp",
+    image: "/real/real_img_18.webp",
     desc: "Plantas eléctricas a combustión interna de gran capacidad para asegurar continuidad."
   },
   {
     title: "Herramientas especializadas",
-    image: "/gis_herramientas.webp",
+    image: "/real/real_img_20.webp",
     desc: "Taladros industriales, equipos de precisión y herramientas de alta gama."
   },
   {
     title: "Infraestructura",
-    image: "/gis_infraestructura.webp",
+    image: "/real/real_img_3.webp",
     desc: "Maquinaria pesada, grúas y logística completa para la ejecución de proyectos."
   }
 ];
@@ -42,7 +42,7 @@ export default function Benefits() {
                 </p>
             </div>
             <div className="relative h-64 rounded-2xl overflow-hidden shadow-2xl">
-                <img src="/gis_infraestructura.webp" alt="Maquinaria pesada" className="absolute inset-0 w-full h-full object-cover" />
+                <img src="/real/real_img_3.webp" alt="Maquinaria pesada" className="absolute inset-0 w-full h-full object-cover" />
                 <div className="absolute inset-0 bg-corporate-cyan/20 mix-blend-multiply" />
             </div>
         </div>
