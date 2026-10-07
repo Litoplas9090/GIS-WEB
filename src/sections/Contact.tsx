@@ -1,18 +1,37 @@
-"use client";
+﻿"use client";
 
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
-import { MapPin, Phone, Mail, Instagram } from "lucide-react";
+import { MapPin, Phone, Mail } from "lucide-react";
 
 const formSchema = z.object({
   nombre: z.string().min(2, "El nombre es requerido"),
   empresa: z.string().optional(),
-  correo: z.string().email("Correo electrónico inválido"),
-  telefono: z.string().min(7, "Teléfono inválido"),
+  correo: z.string().email("Correo electrÃ³nico invÃ¡lido"),
+  telefono: z.string().min(7, "TelÃ©fono invÃ¡lido"),
   servicio: z.string().min(1, "Seleccione un servicio"),
   mensaje: z.string().min(10, "El mensaje es muy corto")
 });
+
+const InstagramIcon = ({ className }: { className?: string }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    className={className}
+  >
+    <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+    <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+  </svg>
+);
 
 export default function Contact() {
   const { register, handleSubmit, formState: { errors } } = useForm<z.infer<typeof formSchema>>({
@@ -39,9 +58,9 @@ Correo: ${data.correo}`;
           
           <div>
             <h2 className="text-sm font-bold text-corporate-cyan tracking-widest uppercase mb-3">Contacto</h2>
-            <h3 className="text-3xl md:text-5xl font-bold heading mb-6 text-white">Iniciemos tu próximo proyecto</h3>
+            <h3 className="text-3xl md:text-5xl font-bold heading mb-6 text-white">Iniciemos tu prÃ³ximo proyecto</h3>
             <p className="text-gray-300 mb-10 text-lg">
-              Déjanos tus datos o contáctanos directamente. Estamos listos para brindarte la mejor solución en ingeniería.
+              DÃ©janos tus datos o contÃ¡ctanos directamente. Estamos listos para brindarte la mejor soluciÃ³n en ingenierÃ­a.
             </p>
             
             <div className="space-y-6">
@@ -50,7 +69,7 @@ Correo: ${data.correo}`;
                   <MapPin className="text-corporate-cyan" />
                 </div>
                 <div>
-                  <h4 className="font-bold text-white">Ubicación</h4>
+                  <h4 className="font-bold text-white">UbicaciÃ³n</h4>
                   <p className="text-gray-300">Barranquilla, Colombia</p>
                 </div>
               </div>
@@ -59,7 +78,7 @@ Correo: ${data.correo}`;
                   <Phone className="text-corporate-cyan" />
                 </div>
                 <div>
-                  <h4 className="font-bold text-white">Teléfonos / WhatsApp</h4>
+                  <h4 className="font-bold text-white">TelÃ©fonos / WhatsApp</h4>
                   <p className="text-gray-300">3003707198 - 3001878739 - 3015768376</p>
                 </div>
               </div>
@@ -68,7 +87,7 @@ Correo: ${data.correo}`;
                   <Mail className="text-corporate-cyan" />
                 </div>
                 <div>
-                  <h4 className="font-bold text-white">Correos Electrónicos</h4>
+                  <h4 className="font-bold text-white">Correos ElectrÃ³nicos</h4>
                   <p className="text-gray-300">gerencia@ingenieriagis.com</p>
                   <p className="text-gray-300">ventas@ingenieriagis.com</p>
                   <p className="text-gray-300">soporte@ingenieriagis.com</p>
@@ -76,7 +95,7 @@ Correo: ${data.correo}`;
               </div>
               <div className="flex items-start">
                 <div className="w-12 h-12 rounded-full bg-corporate-cyan/10 flex items-center justify-center mr-4 shrink-0">
-                  <Instagram className="text-corporate-cyan" />
+                  <InstagramIcon className="text-corporate-cyan" />
                 </div>
                 <div>
                   <h4 className="font-bold text-white">Instagram</h4>
@@ -109,20 +128,20 @@ Correo: ${data.correo}`;
                   {errors.correo && <span className="text-red-400 text-xs mt-1">{errors.correo.message}</span>}
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-gray-300 mb-2">Teléfono *</label>
+                  <label className="block text-sm font-medium text-gray-300 mb-2">TelÃ©fono *</label>
                   <input type="tel" {...register("telefono")} className="w-full bg-[#021d38] border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-corporate-cyan transition-colors" />
                   {errors.telefono && <span className="text-red-400 text-xs mt-1">{errors.telefono.message}</span>}
                 </div>
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-gray-300 mb-2">Servicio de Interés *</label>
+                <label className="block text-sm font-medium text-gray-300 mb-2">Servicio de InterÃ©s *</label>
                 <select {...register("servicio")} className="w-full bg-[#021d38] border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-corporate-cyan transition-colors">
                   <option value="">Seleccione un servicio</option>
-                  <option value="Proyectos Electrónicos">Proyectos Electrónicos</option>
-                  <option value="Proyectos Mecánicos">Proyectos Mecánicos</option>
-                  <option value="Proyectos Eléctricos">Proyectos Eléctricos</option>
-                  <option value="Integración de Proyectos">Integración de Proyectos</option>
+                  <option value="Proyectos ElectrÃ³nicos">Proyectos ElectrÃ³nicos</option>
+                  <option value="Proyectos MecÃ¡nicos">Proyectos MecÃ¡nicos</option>
+                  <option value="Proyectos ElÃ©ctricos">Proyectos ElÃ©ctricos</option>
+                  <option value="IntegraciÃ³n de Proyectos">IntegraciÃ³n de Proyectos</option>
                   <option value="Alquiler de Maquinaria">Alquiler de Maquinaria</option>
                 </select>
                 {errors.servicio && <span className="text-red-400 text-xs mt-1">{errors.servicio.message}</span>}
@@ -144,3 +163,4 @@ Correo: ${data.correo}`;
     </section>
   );
 }
+
