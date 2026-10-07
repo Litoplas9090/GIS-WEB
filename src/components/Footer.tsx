@@ -2,8 +2,8 @@ export default function Footer() {
   return (
     <footer className="bg-[#050B14] py-12 border-t border-white/10 text-center text-gray-400">
       <div className="max-w-7xl mx-auto px-4">
-        <div className="text-2xl font-bold text-white heading tracking-tighter mb-4">
-          GIS <span className="text-corporate-cyan">S.A.S.</span>
+        <div className="flex justify-center mb-4">
+          <img src="/logo.png" alt="GIS S.A.S. Logo" className="h-16 w-auto object-contain" />
         </div>
         <p className="mb-6">Ingeniería segura, eficiente y sostenible</p>
         <div className="flex justify-center gap-6 mb-8 text-sm">

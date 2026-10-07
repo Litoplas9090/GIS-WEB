@@ -6,13 +6,13 @@ import useEmblaCarousel from "embla-carousel-react";
 
 const slides = [
   {
-    image: "https://images.unsplash.com/photo-1581092921461-eab62e97a780?auto=format&fit=crop&q=80",
+    image: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80",
     title: "INGENIERÍA",
     subtitle: "SEGURA",
     description: "Desarrollo de proyectos industriales, comerciales y residenciales bajo los más altos estándares."
   },
   {
-    image: "https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?auto=format&fit=crop&q=80",
+    image: "https://images.unsplash.com/photo-1513828583688-c52646db42da?auto=format&fit=crop&q=80",
     title: "SOLUCIONES",
     subtitle: "EFICIENTES",
     description: "Ingeniería aplicada al ahorro y gestión óptima de recursos en la región Caribe."

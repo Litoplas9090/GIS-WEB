@@ -28,7 +28,7 @@ export default function About() {
   ];
 
   return (
-    <section id="about" className="py-24 bg-corporate-blue text-white">
+    <section id="about" className="py-24 bg-corporate-light text-corporate-blue">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           
@@ -42,17 +42,17 @@ export default function About() {
             <h3 className="text-3xl md:text-5xl font-bold heading mb-6 leading-tight">
               Ingeniería especializada para tu industria
             </h3>
-            <p className="text-gray-300 text-lg mb-6 leading-relaxed">
-              En <strong className="text-white">GIS S.A.S.</strong>, somos una compañía dedicada a la prestación de servicios en las áreas eléctrica, electrónica, mecánica y metalmecánica. Contamos con talento humano especializado para llevar a cabo cada proyecto con la mayor eficiencia.
+            <p className="text-gray-600 text-lg mb-6 leading-relaxed">
+              En <strong className="text-corporate-blue">GIS S.A.S.</strong>, somos una compañía dedicada a la prestación de servicios en las áreas eléctrica, electrónica, mecánica y metalmecánica. Contamos con talento humano especializado para llevar a cabo cada proyecto con la mayor eficiencia.
             </p>
             <div className="grid grid-cols-2 gap-6 mt-10">
               <div className="border-l-2 border-corporate-cyan pl-4">
-                <h4 className="text-xl font-bold text-white mb-2">Misión</h4>
-                <p className="text-sm text-gray-400">Proveer servicios de ingeniería especializados con talento humano altamente calificado, garantizando eficiencia, seguridad y sostenibilidad en cada proyecto.</p>
+                <h4 className="text-xl font-bold text-corporate-blue mb-2">Misión</h4>
+                <p className="text-sm text-gray-600">Proveer servicios de ingeniería especializados con talento humano altamente calificado, garantizando eficiencia, seguridad y sostenibilidad en cada proyecto.</p>
               </div>
               <div className="border-l-2 border-corporate-cyan pl-4">
-                <h4 className="text-xl font-bold text-white mb-2">Visión</h4>
-                <p className="text-sm text-gray-400">Ser líderes en la región Caribe en la integración de soluciones de ingeniería multidisciplinarias.</p>
+                <h4 className="text-xl font-bold text-corporate-blue mb-2">Visión</h4>
+                <p className="text-sm text-gray-600">Ser líderes en la región Caribe en la integración de soluciones de ingeniería multidisciplinarias.</p>
               </div>
             </div>
           </motion.div>
@@ -65,12 +65,12 @@ export default function About() {
             className="grid grid-cols-1 sm:grid-cols-2 gap-6"
           >
             {values.map((item, index) => (
-              <div key={index} className="glass p-8 rounded-2xl hover:-translate-y-2 transition-transform duration-300 bg-white/5 border border-white/10">
+              <div key={index} className="glass p-8 rounded-2xl hover:-translate-y-2 transition-transform duration-300 bg-white shadow-xl border border-gray-100">
                 <div className="bg-corporate-cyan/10 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
                   {item.icon}
                 </div>
                 <h4 className="text-xl font-bold mb-3">{item.title}</h4>
-                <p className="text-gray-400 text-sm leading-relaxed">{item.desc}</p>
+                <p className="text-gray-600 text-sm leading-relaxed">{item.desc}</p>
               </div>
             ))}
           </motion.div>

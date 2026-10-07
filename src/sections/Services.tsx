@@ -15,14 +15,14 @@ const services = [
   {
     id: "mecanicos",
     title: "Proyectos Mecánicos",
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80",
+    image: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80",
     features: ["Montaje de sistemas mecánicos", "Ventilación/climatización", "Red contra incendio", "Plantas eléctricas a combustión", "Sistemas hidráulicos/neumáticos"],
     desc: "Instalación y mantenimiento de maquinaria y sistemas mecánicos."
   },
   {
     id: "electricos",
     title: "Proyectos Eléctricos",
-    image: "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&q=80",
+    image: "https://images.unsplash.com/photo-1513828583688-c52646db42da?auto=format&fit=crop&q=80",
     features: ["Montaje en baja y media tensión", "Mantenimiento predictivo", "Gestión energética y renovables", "Sistemas de bombeo"],
     desc: "Soluciones eléctricas eficientes y seguras para tu industria."
   },
