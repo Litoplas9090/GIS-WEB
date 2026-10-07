@@ -6,22 +6,22 @@ import Image from "next/image";
 const equipment = [
   {
     title: "Trabajo en altura",
-    image: "https://images.unsplash.com/photo-1590644062562-ee0c6b168925?auto=format&fit=crop&q=80",
+    image: "/gis_altura.jpg",
     desc: "Personal con arnés de seguridad, eslingas, escaleras y andamios certificados."
   },
   {
     title: "Respaldo energético",
-    image: "https://images.unsplash.com/photo-1592833159155-c62df1b65634?auto=format&fit=crop&q=80",
+    image: "/gis_respaldo_energetico.jpg",
     desc: "Plantas eléctricas a combustión interna de gran capacidad para asegurar continuidad."
   },
   {
     title: "Herramientas especializadas",
-    image: "https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&q=80",
+    image: "/gis_herramientas.jpg",
     desc: "Taladros industriales, equipos de precisión y herramientas de alta gama."
   },
   {
     title: "Infraestructura",
-    image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80",
+    image: "/gis_infraestructura.jpg",
     desc: "Maquinaria pesada, grúas y logística completa para la ejecución de proyectos."
   }
 ];
@@ -42,7 +42,7 @@ export default function Benefits() {
                 </p>
             </div>
             <div className="relative h-64 rounded-2xl overflow-hidden shadow-2xl">
-                <img src="https://images.unsplash.com/photo-1574621100236-d250323ae897?auto=format&fit=crop&q=80" alt="Maquinaria pesada" className="absolute inset-0 w-full h-full object-cover" />
+                <img src="/gis_infraestructura.jpg" alt="Maquinaria pesada" className="absolute inset-0 w-full h-full object-cover" />
                 <div className="absolute inset-0 bg-corporate-cyan/20 mix-blend-multiply" />
             </div>
         </div>

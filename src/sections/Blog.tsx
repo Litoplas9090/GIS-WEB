@@ -10,7 +10,7 @@ export const blogPosts = [
     title: "Mantenimiento de Subestación Eléctrica",
     excerpt: "Intervención preventiva y correctiva para prolongar la vida útil de los equipos de potencia en la zona industrial.",
     date: "Octubre 2026",
-    image: "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&q=80",
+    image: "/gis_electricos.jpg",
     category: "Proyecto Eléctrico"
   },
   {
@@ -18,7 +18,7 @@ export const blogPosts = [
     title: "Montaje Sistema de Refrigeración Industrial",
     excerpt: "Diseño e implementación de soluciones de aire acondicionado y ventilación para centro logístico.",
     date: "Septiembre 2026",
-    image: "https://images.unsplash.com/photo-1581092162384-8987c1d64718?auto=format&fit=crop&q=80",
+    image: "/gis_mecanicos.jpg",
     category: "Proyecto Mecánico"
   },
   {
@@ -26,7 +26,7 @@ export const blogPosts = [
     title: "Instalación de Red Contra Incendios",
     excerpt: "Diseño y montaje de sistemas de protección cumpliendo normativas de seguridad en complejo comercial.",
     date: "Agosto 2026",
-    image: "https://images.unsplash.com/photo-1581092335397-9583eb92d232?auto=format&fit=crop&q=80",
+    image: "/gis_infraestructura.jpg",
     category: "Integración"
   }
 ];

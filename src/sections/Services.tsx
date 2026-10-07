@@ -8,28 +8,28 @@ const services = [
   {
     id: "electronicos",
     title: "Proyectos Electrónicos",
-    image: "https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?auto=format&fit=crop&q=80",
+    image: "/gis_electronicos.jpg",
     features: ["Automatización y control industrial", "Instrumentación y sensorización", "Sistemas de comunicación y redes", "Seguridad electrónica y cámaras", "Mantenimiento de PLCs"],
     desc: "Sistemas avanzados con cámaras, sensores y automatización para control industrial."
   },
   {
     id: "mecanicos",
     title: "Proyectos Mecánicos",
-    image: "https://images.unsplash.com/photo-1621905251918-4841cdd5b9cd?auto=format&fit=crop&q=80",
+    image: "/gis_mecanicos.jpg",
     features: ["Mecánica industrial pesada", "Mantenimiento de rodamientos", "Motores de combustión interna", "Ventilación y climatización", "Sistemas hidráulicos y neumáticos"],
     desc: "Mantenimiento profundo de motores, rodamientos y sistemas de mecánica industrial."
   },
   {
     id: "electricos",
     title: "Proyectos Eléctricos",
-    image: "https://images.unsplash.com/photo-1620986794689-53e8785eb3ef?auto=format&fit=crop&q=80",
+    image: "/gis_electricos.jpg",
     features: ["Montaje de tableros eléctricos", "Mantenimiento de subestaciones", "Gestión de energías renovables", "Líneas de media y baja tensión"],
     desc: "Montaje, mantenimiento de tableros industriales y soluciones en energías renovables."
   },
   {
     id: "integracion",
     title: "Integración de Proyectos",
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80",
+    image: "/gis_integracion.jpg",
     features: ["Eléctrica", "Mecánica", "Metalmecánica", "Electrónica"],
     desc: "Desarrollamos soluciones completas integrando múltiples disciplinas."
   }

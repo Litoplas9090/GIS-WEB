@@ -6,116 +6,104 @@ import useEmblaCarousel from "embla-carousel-react";
 
 const slides = [
   {
-    image: "https://images.unsplash.com/photo-1541888086425-d81bb19240f5?auto=format&fit=crop&q=80",
-    title: "INGENIERÍA",
-    subtitle: "SEGURA",
-    description: "Desarrollo de proyectos industriales, comerciales y residenciales bajo los más altos estándares."
+    title: "INGENIERÍA SEGURA",
+    subtitle: "Desarrollo de proyectos industriales, comerciales y residenciales bajo los más altos estándares.",
+    image: "/gis_hero.jpg",
   },
   {
-    image: "https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&q=80",
-    title: "SOLUCIONES",
-    subtitle: "EFICIENTES",
-    description: "Ingeniería aplicada al ahorro y gestión óptima de recursos en la región Caribe."
+    title: "EFICIENCIA ENERGÉTICA",
+    subtitle: "Soluciones sostenibles que optimizan recursos y protegen el medio ambiente.",
+    image: "/gis_electricos.jpg",
   },
   {
-    image: "https://images.unsplash.com/photo-1497440001374-f26997328c1b?auto=format&fit=crop&q=80",
-    title: "TECNOLOGÍA",
-    subtitle: "SOSTENIBLE",
-    description: "Promovemos la conservación mediante la implementación de energías renovables y limpias."
+    title: "TALENTO CERTIFICADO",
+    subtitle: "Personal técnico calificado con amplia experiencia en el sector eléctrico, mecánico y electrónico.",
+    image: "/gis_infraestructura.jpg",
   }
 ];
 
 export default function Hero() {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, duration: 40 });
-  const [selectedIndex, setSelectedIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-  const scrollNext = useCallback(() => {
-    if (emblaApi) emblaApi.scrollNext();
+  const onSelect = useCallback(() => {
+    if (!emblaApi) return;
+    setCurrentIndex(emblaApi.selectedScrollSnap());
   }, [emblaApi]);
 
   useEffect(() => {
     if (!emblaApi) return;
-    
-    const onSelect = () => setSelectedIndex(emblaApi.selectedScrollSnap());
     emblaApi.on("select", onSelect);
     
-    // Autoplay
-    const autoplay = setInterval(() => {
-      scrollNext();
+    const interval = setInterval(() => {
+      emblaApi.scrollNext();
     }, 6000);
-
+    
     return () => {
-      clearInterval(autoplay);
+      clearInterval(interval);
       emblaApi.off("select", onSelect);
     };
-  }, [emblaApi, scrollNext]);
+  }, [emblaApi, onSelect]);
 
   return (
-    <section className="relative w-full h-screen overflow-hidden bg-corporate-black">
+    <section id="hero" className="relative h-screen flex items-center justify-center overflow-hidden bg-corporate-black">
       <div className="absolute inset-0 z-0" ref={emblaRef}>
-        <div className="flex h-full touch-pan-y">
+        <div className="flex h-full">
           {slides.map((slide, index) => (
-            <div key={index} className="relative flex-[0_0_100%] h-full overflow-hidden">
-              <motion.div
-                initial={{ scale: 1.2 }}
-                animate={{ scale: selectedIndex === index ? 1 : 1.2 }}
-                transition={{ duration: 8, ease: "easeOut" }}
-                className="absolute inset-0 w-full h-full"
-                style={{
-                  backgroundImage: `url(${slide.image})`,
-                  backgroundPosition: "center",
-                  backgroundSize: "cover",
-                }}
+            <div key={index} className="flex-[0_0_100%] min-w-0 relative h-full">
+              <div className="absolute inset-0 bg-corporate-black/60 mix-blend-multiply z-10" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#050B14] via-[#050B14]/70 to-transparent z-10" />
+              <img 
+                src={slide.image}
+                alt={slide.title}
+                className="w-full h-full object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-corporate-black via-corporate-black/60 to-transparent" />
-              <div className="absolute inset-0 bg-corporate-blue/20 mix-blend-multiply" />
             </div>
           ))}
         </div>
       </div>
 
-      <div className="absolute inset-0 z-10 flex flex-col justify-end pb-32 px-4 sm:px-8 lg:px-16 max-w-7xl mx-auto">
+      <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full mt-20">
         <AnimatePresence mode="wait">
           <motion.div
-            key={selectedIndex}
-            initial={{ opacity: 0, y: 40 }}
+            key={currentIndex}
+            initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -40 }}
-            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-            className="max-w-4xl"
+            exit={{ opacity: 0, y: -30 }}
+            transition={{ duration: 0.8 }}
+            className="max-w-3xl"
           >
-            <div className="flex items-center gap-4 mb-4">
-              <div className="h-[2px] w-12 bg-corporate-cyan" />
-              <span className="text-corporate-cyan text-sm md:text-base font-bold tracking-[0.2em] uppercase">
+            <div className="flex items-center gap-4 mb-6">
+              <div className="h-[2px] w-12 bg-corporate-cyan"></div>
+              <span className="text-corporate-cyan font-bold tracking-[0.2em] text-sm md:text-base uppercase">
                 GIS S.A.S.
               </span>
             </div>
             
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-black text-white heading leading-[0.9] tracking-tighter mb-4">
-              {slides[selectedIndex].title}
-              <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-500">
-                {slides[selectedIndex].subtitle}
-              </span>
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 leading-tight tracking-tight heading drop-shadow-lg">
+              {slides[currentIndex].title.split(" ").map((word, i, arr) => (
+                <span key={i} className={i === arr.length - 1 ? "text-gray-400" : ""}>
+                  {word}{" "}
+                </span>
+              ))}
             </h1>
             
-            <p className="text-lg md:text-2xl text-gray-300 max-w-2xl mb-10 font-light">
-              {slides[selectedIndex].description}
+            <p className="text-xl md:text-2xl text-gray-300 mb-10 max-w-2xl font-light">
+              {slides[currentIndex].subtitle}
             </p>
-
-            <div className="flex flex-col sm:flex-row gap-6">
-              <a
-                href="https://wa.me/573003707198?text=Hola,%20deseo%20recibir%20información%20sobre%20los%20servicios%20de%20GIS%20S.A.S."
+            
+            <div className="flex flex-col sm:flex-row gap-4">
+              <a 
+                href={`https://wa.me/573003707198?text=Hola,%20deseo%20recibir%20información%20sobre%20los%20servicios%20de%20GIS%20S.A.S.`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group relative px-8 py-4 overflow-hidden rounded-none bg-white text-corporate-black font-bold text-sm md:text-base tracking-widest uppercase transition-all flex items-center justify-center gap-3"
+                className="bg-white text-corporate-black px-8 py-4 text-center font-bold text-sm tracking-widest uppercase hover:bg-corporate-cyan transition-all duration-300"
               >
-                <div className="absolute inset-0 w-0 bg-corporate-cyan transition-all duration-[250ms] ease-out group-hover:w-full" />
-                <span className="relative">Contactar Asesor</span>
+                Contactar Asesor
               </a>
-              <a
-                href="#services"
-                className="px-8 py-4 border border-white/30 text-white font-bold text-sm md:text-base tracking-widest uppercase hover:bg-white hover:text-corporate-black transition-colors duration-300 flex items-center justify-center"
+              <a 
+                href="#services" 
+                className="border border-white/30 text-white px-8 py-4 text-center font-bold text-sm tracking-widest uppercase hover:bg-white/10 transition-all duration-300 backdrop-blur-sm"
               >
                 Explorar Soluciones
               </a>
@@ -124,15 +112,15 @@ export default function Hero() {
         </AnimatePresence>
       </div>
 
-      <div className="absolute bottom-10 right-4 sm:right-8 lg:right-16 z-20 flex gap-3">
+      <div className="absolute bottom-10 right-10 z-20 flex gap-3">
         {slides.map((_, index) => (
           <button
             key={index}
             onClick={() => emblaApi?.scrollTo(index)}
             className={`h-1 transition-all duration-500 ${
-              selectedIndex === index ? "w-12 bg-corporate-cyan" : "w-6 bg-white/30 hover:bg-white/50"
+              index === currentIndex ? "w-12 bg-corporate-cyan" : "w-6 bg-white/30"
             }`}
-            aria-label={`Ir a la diapositiva ${index + 1}`}
+            aria-label={`Go to slide ${index + 1}`}
           />
         ))}
       </div>
