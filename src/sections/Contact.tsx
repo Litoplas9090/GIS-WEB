@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -20,15 +20,15 @@ export default function Contact() {
   });
 
   const onSubmit = (data: z.infer<typeof formSchema>) => {
-    const message = "Hola, mi nombre es ${data.nombre} ${data.empresa ? "de la empresa ${data.empresa}" : ""}.
+    const message = `Hola, mi nombre es ${data.nombre} ${data.empresa ? `de la empresa ${data.empresa}` : ''}.
 Me interesa el servicio de: ${data.servicio}.
 Mensaje: ${data.mensaje}
 
 Contacto:
 Tel: ${data.telefono}
-Correo: ${data.correo}";
+Correo: ${data.correo}`;
     
-    const whatsappUrl = "https://wa.me/573003707198?text=${encodeURIComponent(message)}";
+    const whatsappUrl = `https://wa.me/573003707198?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
 
