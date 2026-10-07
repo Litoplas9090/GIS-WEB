@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
@@ -6,71 +6,77 @@ import Link from "next/link";
 
 export const blogPosts = [
   {
-    slug: "montaje-planta-electrica-industrial",
-    category: "Proyectos Eléctricos",
-    title: "Montaje de Planta Eléctrica para Zona Industrial",
-    excerpt: "Instalación y puesta en marcha de un sistema de respaldo energético de 500kVA para garantizar la continuidad operativa de una planta de producción.",
-    date: "15 Sep, 2026",
-    readTime: "Proyectos"
+    id: "1",
+    title: "Mantenimiento de Subestación Eléctrica",
+    excerpt: "Intervención preventiva y correctiva para prolongar la vida útil de los equipos de potencia en la zona industrial.",
+    date: "Octubre 2026",
+    image: "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&q=80",
+    category: "Proyecto Eléctrico"
   },
   {
-    slug: "automatizacion-sistema-bombeo",
-    category: "Proyectos Electrónicos",
-    title: "Automatización de Sistema de Bombeo Agrícola",
-    excerpt: "Implementación de control industrial y sensorización para un sistema de riego a gran escala, optimizando el consumo de agua y energía.",
-    date: "28 Ago, 2026",
-    readTime: "Proyectos"
+    id: "2",
+    title: "Montaje Sistema de Refrigeración Industrial",
+    excerpt: "Diseño e implementación de soluciones de aire acondicionado y ventilación para centro logístico.",
+    date: "Septiembre 2026",
+    image: "https://images.unsplash.com/photo-1581092162384-8987c1d64718?auto=format&fit=crop&q=80",
+    category: "Proyecto Mecánico"
   },
   {
-    slug: "climatizacion-centro-comercial",
-    category: "Proyectos Mecánicos",
-    title: "Sistema de Climatización y Ventilación",
-    excerpt: "Diseño y montaje de un sistema de aire acondicionado central y ventilación mecánica para un nuevo centro comercial en la región Caribe.",
-    date: "10 Jul, 2026",
-    readTime: "Proyectos"
+    id: "3",
+    title: "Instalación de Red Contra Incendios",
+    excerpt: "Diseño y montaje de sistemas de protección cumpliendo normativas de seguridad en complejo comercial.",
+    date: "Agosto 2026",
+    image: "https://images.unsplash.com/photo-1517524008697-84bbe3c3fd98?auto=format&fit=crop&q=80",
+    category: "Integración"
   }
 ];
 
 export default function Blog() {
   return (
-    <section id="blog" className="py-24 bg-[#0A1118] text-white border-t border-white/5">
+    <section className="py-24 bg-corporate-light text-corporate-blue">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
           <div>
-            <h2 className="text-sm font-bold text-corporate-cyan tracking-widest uppercase mb-3">Portafolio</h2>
-            <h3 className="text-3xl md:text-5xl font-bold heading">Proyectos Destacados</h3>
+            <h2 className="text-sm font-bold text-corporate-cyan tracking-widest uppercase mb-3">Casos de Éxito</h2>
+            <h3 className="text-3xl md:text-5xl font-bold heading text-corporate-blue">Proyectos Destacados</h3>
           </div>
-          <button className="text-corporate-cyan font-bold uppercase tracking-wide hover:text-white transition-colors flex items-center gap-2">
-            Ver Todos <ArrowRight size={20} />
-          </button>
+          <Link href="#contacto" className="inline-flex items-center text-corporate-cyan hover:text-corporate-blue transition-colors font-bold uppercase tracking-wider text-sm">
+            Cotizar un Proyecto <ArrowRight className="ml-2 w-5 h-5" />
+          </Link>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {blogPosts.map((post, idx) => (
-            <Link key={idx} href={`/proyectos/${post.slug}`} passHref>
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: idx * 0.1 }}
-                className="bg-corporate-blue/30 rounded-2xl border border-white/5 overflow-hidden hover:border-corporate-cyan/50 transition-colors group cursor-pointer h-full flex flex-col"
-              >
-                <div className="p-8 flex-grow flex flex-col">
-                  <div className="flex justify-between items-center mb-4 text-xs font-medium text-gray-400">
-                    <span className="bg-corporate-cyan/10 text-corporate-cyan px-3 py-1 rounded-full">{post.category}</span>
-                    <span>{post.readTime}</span>
-                  </div>
-                  <h4 className="text-xl font-bold mb-3 group-hover:text-corporate-cyan transition-colors">{post.title}</h4>
-                  <p className="text-gray-400 text-sm mb-6 line-clamp-3 flex-grow">{post.excerpt}</p>
-                  <div className="flex justify-between items-center text-sm font-medium pt-4 border-t border-white/5">
-                    <span className="text-gray-500">{post.date}</span>
-                    <span className="text-corporate-cyan flex items-center gap-1 group-hover:translate-x-2 transition-transform">
-                      Ver detalles <ArrowRight size={16} />
-                    </span>
-                  </div>
+            <motion.div 
+              key={post.id}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: idx * 0.1 }}
+              className="group cursor-pointer bg-white rounded-2xl overflow-hidden shadow-xl border border-gray-100 flex flex-col h-full"
+            >
+              <div className="relative h-64 overflow-hidden shrink-0">
+                <div className="absolute inset-0 bg-corporate-blue/20 group-hover:bg-transparent transition-colors z-10 duration-500" />
+                <img 
+                  src={post.image} 
+                  alt={post.title}
+                  className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-in-out"
+                />
+                <div className="absolute top-4 left-4 z-20">
+                  <span className="px-3 py-1 bg-corporate-cyan text-corporate-blue text-xs font-bold uppercase tracking-wider rounded-sm shadow-lg">
+                    {post.category}
+                  </span>
                 </div>
-              </motion.div>
-            </Link>
+              </div>
+              <div className="p-8 flex flex-col flex-grow">
+                <span className="text-gray-400 text-sm mb-3 block">{post.date}</span>
+                <h4 className="text-xl font-bold text-corporate-blue mb-4 group-hover:text-corporate-cyan transition-colors">{post.title}</h4>
+                <p className="text-gray-600 mb-6 text-sm flex-grow">{post.excerpt}</p>
+                <div className="inline-flex items-center text-corporate-blue font-semibold text-sm group-hover:text-corporate-cyan transition-colors mt-auto">
+                  Leer más <ArrowRight className="ml-2 w-4 h-4 transform group-hover:translate-x-2 transition-transform" />
+                </div>
+              </div>
+            </motion.div>
           ))}
         </div>
       </div>

@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -32,13 +32,19 @@ export default function Benefits() {
       <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-corporate-cyan/20 via-transparent to-transparent" />
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold text-corporate-blue heading mb-6">
-            Respaldo Tecnológico y Alquiler
-          </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto font-medium">
-            Contamos con los equipos y herramientas necesarias para la ejecución eficiente y segura de sus proyectos.
-          </p>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+            <div>
+                <h2 className="text-3xl md:text-5xl font-bold text-corporate-blue heading mb-6">
+                    Respaldo Tecnológico y Alquiler
+                </h2>
+                <p className="text-lg text-gray-600 max-w-2xl font-medium">
+                    Contamos con los equipos y herramientas necesarias para la ejecución eficiente y segura de sus proyectos. Todo nuestro equipo cuenta con certificaciones al día.
+                </p>
+            </div>
+            <div className="relative h-64 rounded-2xl overflow-hidden shadow-2xl">
+                <img src="https://images.unsplash.com/photo-1574621100236-d250323ae897?auto=format&fit=crop&q=80" alt="Maquinaria pesada" className="absolute inset-0 w-full h-full object-cover" />
+                <div className="absolute inset-0 bg-corporate-cyan/20 mix-blend-multiply" />
+            </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

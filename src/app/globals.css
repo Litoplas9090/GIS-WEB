@@ -1,4 +1,4 @@
-@import "tailwindcss";
+﻿@import "tailwindcss";
 
 @theme {
   --color-corporate-blue: #032B52; /* GIS Navy Blue */
@@ -47,3 +47,8 @@ body {
 }
 
 
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-33.33%); }
+}

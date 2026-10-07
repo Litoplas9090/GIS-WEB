@@ -1,6 +1,7 @@
-import Navbar from "@/components/Navbar";
+﻿import Navbar from "@/components/Navbar";
 import Hero from "@/sections/Hero";
 import About from "@/sections/About";
+import Clients from "@/sections/Clients";
 import Services from "@/sections/Services";
 import Benefits from "@/sections/Benefits";
 import FAQ from "@/sections/FAQ";
@@ -15,6 +16,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <About />
+      <Clients />
       <Services />
       <Benefits />
       <Blog />
@@ -25,3 +27,4 @@ export default function Home() {
     </main>
   );
 }
+

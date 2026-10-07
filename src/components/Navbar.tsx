@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -34,7 +34,7 @@ export default function Navbar() {
         <div className="flex justify-between items-center">
           <div className="flex-shrink-0 flex items-center">
             <a href="#" className="flex items-center gap-2">
-              <img src="/logo.png" alt="GIS S.A.S. Logo" className="h-14 w-auto object-contain" />
+              <img src="/logogis.png" alt="GIS S.A.S. Logo" className="h-14 w-auto object-contain" />
             </a>
           </div>
           
@@ -99,3 +99,4 @@ export default function Navbar() {
     </nav>
   );
 }
+
