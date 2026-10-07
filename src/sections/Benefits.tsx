@@ -6,23 +6,23 @@ import Image from "next/image";
 const equipment = [
   {
     title: "Trabajo en altura",
-    image: "https://images.unsplash.com/photo-1503945438517-f65904a52ce6?auto=format&fit=crop&q=80",
-    desc: "Maquinaria y andamios certificados para garantizar seguridad en alturas."
+    image: "https://images.unsplash.com/photo-1590644062562-ee0c6b168925?auto=format&fit=crop&q=80",
+    desc: "Personal con arnés de seguridad, eslingas, escaleras y andamios certificados."
   },
   {
     title: "Respaldo energético",
-    image: "https://images.unsplash.com/photo-1592833159057-658b4edafbd7?auto=format&fit=crop&q=80",
-    desc: "Plantas eléctricas a combustión para asegurar continuidad operativa."
+    image: "https://images.unsplash.com/photo-1592833159155-c62df1b65634?auto=format&fit=crop&q=80",
+    desc: "Plantas eléctricas a combustión interna de gran capacidad para asegurar continuidad."
   },
   {
     title: "Herramientas especializadas",
-    image: "https://images.unsplash.com/photo-1581147036324-c104e12c146e?auto=format&fit=crop&q=80",
-    desc: "Taladros, escaleras y equipos de precisión para cada necesidad."
+    image: "https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&q=80",
+    desc: "Taladros industriales, equipos de precisión y herramientas de alta gama."
   },
   {
     title: "Infraestructura",
-    image: "https://images.unsplash.com/photo-1541888086425-d81bb19240f5?auto=format&fit=crop&q=80",
-    desc: "Infraestructura y logística completa para proyectos de ingeniería."
+    image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80",
+    desc: "Maquinaria pesada, grúas y logística completa para la ejecución de proyectos."
   }
 ];
 
@@ -38,7 +38,7 @@ export default function Benefits() {
                     Respaldo Tecnológico y Alquiler
                 </h2>
                 <p className="text-lg text-gray-600 max-w-2xl font-medium">
-                    Contamos con los equipos y herramientas necesarias para la ejecución eficiente y segura de sus proyectos. Todo nuestro equipo cuenta con certificaciones al día.
+                    Contamos con los equipos, herramientas e infraestructura necesaria para la ejecución eficiente y segura de sus proyectos. Todo nuestro equipo cuenta con certificaciones al día.
                 </p>
             </div>
             <div className="relative h-64 rounded-2xl overflow-hidden shadow-2xl">

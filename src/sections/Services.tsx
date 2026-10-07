@@ -8,23 +8,23 @@ const services = [
   {
     id: "electronicos",
     title: "Proyectos Electrónicos",
-    image: "https://images.unsplash.com/photo-1580894732444-8ecded7900cd?auto=format&fit=crop&q=80",
-    features: ["Automatización y control industrial", "Instrumentación y sensorización", "Sistemas de comunicación y redes", "Seguridad electrónica", "Mantenimiento de equipos"],
-    desc: "Sistemas avanzados y automatización para optimizar la producción."
+    image: "https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?auto=format&fit=crop&q=80",
+    features: ["Automatización y control industrial", "Instrumentación y sensorización", "Sistemas de comunicación y redes", "Seguridad electrónica y cámaras", "Mantenimiento de PLCs"],
+    desc: "Sistemas avanzados con cámaras, sensores y automatización para control industrial."
   },
   {
     id: "mecanicos",
     title: "Proyectos Mecánicos",
-    image: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80",
-    features: ["Montaje de sistemas mecánicos", "Ventilación y climatización", "Red contra incendio", "Plantas eléctricas a combustión", "Sistemas hidráulicos y neumáticos"],
-    desc: "Instalación y mantenimiento de maquinaria y sistemas mecánicos."
+    image: "https://images.unsplash.com/photo-1621905251918-4841cdd5b9cd?auto=format&fit=crop&q=80",
+    features: ["Mecánica industrial pesada", "Mantenimiento de rodamientos", "Motores de combustión interna", "Ventilación y climatización", "Sistemas hidráulicos y neumáticos"],
+    desc: "Mantenimiento profundo de motores, rodamientos y sistemas de mecánica industrial."
   },
   {
     id: "electricos",
     title: "Proyectos Eléctricos",
-    image: "https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&q=80",
-    features: ["Montaje en baja y media tensión", "Mantenimiento predictivo", "Gestión energética y renovables", "Sistemas de bombeo"],
-    desc: "Soluciones eléctricas eficientes y seguras para tu industria."
+    image: "https://images.unsplash.com/photo-1620986794689-53e8785eb3ef?auto=format&fit=crop&q=80",
+    features: ["Montaje de tableros eléctricos", "Mantenimiento de subestaciones", "Gestión de energías renovables", "Líneas de media y baja tensión"],
+    desc: "Montaje, mantenimiento de tableros industriales y soluciones en energías renovables."
   },
   {
     id: "integracion",

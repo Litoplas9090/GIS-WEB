@@ -34,7 +34,7 @@ export default function Navbar() {
         <div className="flex justify-between items-center">
           <div className="flex-shrink-0 flex items-center">
             <a href="#" className="flex items-center gap-2">
-              <img src="/logogis.png" alt="GIS S.A.S. Logo" className="h-20 md:h-24 w-auto object-contain" />
+              <img src="/logogis.png" alt="GIS S.A.S. Logo" className="h-28 md:h-32 w-auto object-contain drop-shadow-md" />
             </a>
           </div>
           
@@ -43,17 +43,11 @@ export default function Navbar() {
               <a
                 key={link.name}
                 href={link.href}
-                className="text-gray-300 hover:text-corporate-cyan transition-colors text-sm font-medium uppercase tracking-wider"
+                className="text-gray-300 hover:text-corporate-cyan transition-colors text-sm font-medium uppercase tracking-wider font-bold"
               >
                 {link.name}
               </a>
             ))}
-            <a
-              href="/portal"
-              className="text-corporate-cyan border border-corporate-cyan px-4 py-2 rounded hover:bg-corporate-cyan hover:text-corporate-black transition-all text-sm font-bold uppercase"
-            >
-              Portal Clientes
-            </a>
           </div>
 
           <div className="md:hidden flex items-center">
@@ -86,12 +80,6 @@ export default function Navbar() {
                   {link.name}
                 </a>
               ))}
-              <a
-                href="/portal"
-                className="block px-3 py-3 mt-4 text-center rounded-md text-base font-bold text-corporate-black bg-corporate-cyan"
-              >
-                Portal Clientes
-              </a>
             </div>
           </motion.div>
         )}

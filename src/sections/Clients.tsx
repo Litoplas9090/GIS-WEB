@@ -1,15 +1,15 @@
-﻿"use client";
+"use client";
 import { motion } from "framer-motion";
 
 export default function Clients() {
-  const clients = [
-    { name: "Alimentos Cárnicos", logo: "/clientes/carnicos.png" },
+  // Los duplicamos varias veces para que el scroll infinito se vea sin huecos
+  const baseClients = [
+    { name: "Alimentos Cárnicos", logo: "/clientes/alimentoscarnicos.png" },
     { name: "Litoplas", logo: "/clientes/litoplas.png" },
     { name: "Polyrec", logo: "/clientes/polyrec.png" },
-    { name: "Cliente 4", logo: "/clientes/carnicos.png" },
-    { name: "Cliente 5", logo: "/clientes/litoplas.png" },
-    { name: "Cliente 6", logo: "/clientes/polyrec.png" },
   ];
+  
+  const clients = [...baseClients, ...baseClients, ...baseClients, ...baseClients];
 
   return (
     <section className="py-16 bg-white overflow-hidden">
@@ -25,7 +25,7 @@ export default function Clients() {
         <div className="absolute right-0 w-24 h-full bg-gradient-to-l from-white to-transparent z-10" />
         
         <div className="flex w-max animate-[scroll_30s_linear_infinite]">
-          {[...clients, ...clients, ...clients].map((client, index) => (
+          {clients.map((client, index) => (
             <div key={index} className="mx-8 flex items-center justify-center w-48 h-24 grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100">
               <img src={client.logo} alt={client.name} className="max-w-full max-h-full object-contain" />
             </div>
