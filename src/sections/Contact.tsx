@@ -28,7 +28,7 @@ Contacto:
 Tel: ${data.telefono}
 Correo: ${data.correo}`;
     
-    const whatsappUrl = `https://wa.me/573045807453?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/573003707198?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
 
@@ -41,7 +41,7 @@ Correo: ${data.correo}`;
             <h2 className="text-sm font-bold text-corporate-cyan tracking-widest uppercase mb-3">Contacto</h2>
             <h3 className="text-3xl md:text-5xl font-bold heading mb-6">Iniciemos tu próximo proyecto</h3>
             <p className="text-gray-400 mb-10 text-lg">
-              Déjanos tus datos o contáctanos directamente. Estamos listos para brindarte la mejor solución tecnológica y administrativa.
+              Déjanos tus datos o contáctanos directamente. Estamos listos para brindarte la mejor solución en ingeniería.
             </p>
             
             <div className="space-y-6">
@@ -59,8 +59,8 @@ Correo: ${data.correo}`;
                   <Phone className="text-corporate-cyan" />
                 </div>
                 <div>
-                  <h4 className="font-bold">Teléfono / WhatsApp</h4>
-                  <p className="text-gray-400">+57 3045807453</p>
+                  <h4 className="font-bold">Teléfonos / WhatsApp</h4>
+                  <p className="text-gray-400">3003707198 - 3001878739 - 3015768376</p>
                 </div>
               </div>
               <div className="flex items-center">
@@ -69,7 +69,7 @@ Correo: ${data.correo}`;
                 </div>
                 <div>
                   <h4 className="font-bold">Correo Electrónico</h4>
-                  <p className="text-gray-400">contacto@IntegralKey.com</p>
+                  <p className="text-gray-400">contacto@gissas.com</p>
                 </div>
               </div>
             </div>
@@ -106,11 +106,11 @@ Correo: ${data.correo}`;
                 <label className="block text-sm font-medium text-gray-400 mb-2">Servicio de Interés *</label>
                 <select {...register("servicio")} className="w-full bg-corporate-blue/50 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-corporate-cyan transition-colors">
                   <option value="">Seleccione un servicio</option>
-                  <option value="Seguridad Tecnológica">Seguridad Tecnológica</option>
-                  <option value="Desarrollo Web">Desarrollo Web</option>
-                  <option value="Plataformas a la Medida">Plataformas a la Medida</option>
-                  <option value="Administración P.H.">Administración P.H.</option>
-                  <option value="Conserjería">Conserjería y Servicios Integrales</option>
+                  <option value="Proyectos Electrónicos">Proyectos Electrónicos</option>
+                  <option value="Proyectos Mecánicos">Proyectos Mecánicos</option>
+                  <option value="Proyectos Eléctricos">Proyectos Eléctricos</option>
+                  <option value="Integración de Proyectos">Integración de Proyectos</option>
+                  <option value="Alquiler de Maquinaria">Alquiler de Maquinaria</option>
                 </select>
                 {errors.servicio && <span className="text-red-400 text-xs mt-1">{errors.servicio.message}</span>}
               </div>

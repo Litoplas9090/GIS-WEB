@@ -1,12 +1,29 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
-const benefits = [
-  { value: "99%", label: "Atención personalizada" },
-  { value: "<2h", label: "Tiempo de respuesta rápida" },
-  { value: "360°", label: "Cobertura integral" },
-  { value: "100%", label: "Tecnología de última generación" }
+const equipment = [
+  {
+    title: "Trabajo en altura",
+    image: "https://images.unsplash.com/photo-1503945438517-f65904a52ce6?auto=format&fit=crop&q=80",
+    desc: "Maquinaria y andamios certificados para garantizar seguridad en alturas."
+  },
+  {
+    title: "Respaldo energético",
+    image: "https://images.unsplash.com/photo-1592833159057-658b4edafbd7?auto=format&fit=crop&q=80",
+    desc: "Plantas eléctricas a combustión para asegurar continuidad operativa."
+  },
+  {
+    title: "Herramientas especializadas",
+    image: "https://images.unsplash.com/photo-1581147036324-c104e12c146e?auto=format&fit=crop&q=80",
+    desc: "Taladros, escaleras y equipos de precisión para cada necesidad."
+  },
+  {
+    title: "Infraestructura",
+    image: "https://images.unsplash.com/photo-1541888086425-d81bb19240f5?auto=format&fit=crop&q=80",
+    desc: "Infraestructura y logística completa para proyectos de ingeniería."
+  }
 ];
 
 export default function Benefits() {
@@ -17,28 +34,35 @@ export default function Benefits() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold text-white heading mb-6">
-            Por qué elegir IntegralKey
+            Respaldo Tecnológico y Alquiler
           </h2>
           <p className="text-lg text-gray-300 max-w-2xl mx-auto font-medium">
-            Nuestro compromiso es brindar un servicio excepcional, implementando soluciones inteligentes con resultados medibles.
+            Contamos con los equipos y herramientas necesarias para la ejecución eficiente y segura de sus proyectos.
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-          {benefits.map((stat, idx) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {equipment.map((item, idx) => (
             <motion.div
               key={idx}
-              initial={{ scale: 0.5, opacity: 0 }}
-              whileInView={{ scale: 1, opacity: 1 }}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: idx * 0.1 }}
-              className="text-center bg-white/5 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-white/10"
+              className="group relative overflow-hidden rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10"
             >
-              <div className="text-4xl md:text-6xl font-black text-corporate-cyan mb-2 font-heading">
-                {stat.value}
+              <div className="relative h-48 w-full overflow-hidden">
+                <Image
+                  src={item.image}
+                  alt={item.title}
+                  fill
+                  className="object-cover transform group-hover:scale-110 transition-transform duration-700 ease-in-out"
+                />
+                <div className="absolute inset-0 bg-corporate-blue/40 mix-blend-multiply" />
               </div>
-              <div className="text-sm md:text-base font-bold text-gray-300 uppercase tracking-wide">
-                {stat.label}
+              <div className="p-6">
+                <h4 className="text-lg font-bold text-white mb-2">{item.title}</h4>
+                <p className="text-sm text-gray-400">{item.desc}</p>
               </div>
             </motion.div>
           ))}
