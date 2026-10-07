@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -45,7 +45,7 @@ export default function FAQ() {
               >
                 <span className="font-bold text-lg text-white">{faq.q}</span>
                 <ChevronDown 
-                  className="w-6 h-6 text-corporate-cyan transition-transform duration-300 shrink-0 " 
+                  className={`w-6 h-6 text-corporate-cyan transition-transform duration-300 shrink-0 ${open === idx ? "rotate-180" : ""}`} 
                 />
               </button>
               <AnimatePresence>

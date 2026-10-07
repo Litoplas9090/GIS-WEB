@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -8,7 +8,7 @@ const services = [
   {
     id: "electronicos",
     title: "Proyectos Electrónicos",
-    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80",
+    image: "https://images.unsplash.com/photo-1580894732444-8ecded7900cd?auto=format&fit=crop&q=80",
     features: ["Automatización y control industrial", "Instrumentación y sensorización", "Sistemas de comunicación y redes", "Seguridad electrónica", "Mantenimiento de equipos"],
     desc: "Sistemas avanzados y automatización para optimizar la producción."
   },
@@ -22,14 +22,14 @@ const services = [
   {
     id: "electricos",
     title: "Proyectos Eléctricos",
-    image: "https://images.unsplash.com/photo-1513828583688-c52646db42da?auto=format&fit=crop&q=80",
+    image: "https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&q=80",
     features: ["Montaje en baja y media tensión", "Mantenimiento predictivo", "Gestión energética y renovables", "Sistemas de bombeo"],
     desc: "Soluciones eléctricas eficientes y seguras para tu industria."
   },
   {
     id: "integracion",
     title: "Integración de Proyectos",
-    image: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&q=80",
+    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80",
     features: ["Eléctrica", "Mecánica", "Metalmecánica", "Electrónica"],
     desc: "Desarrollamos soluciones completas integrando múltiples disciplinas."
   }

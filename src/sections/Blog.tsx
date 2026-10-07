@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
@@ -26,7 +26,7 @@ export const blogPosts = [
     title: "Instalación de Red Contra Incendios",
     excerpt: "Diseño y montaje de sistemas de protección cumpliendo normativas de seguridad en complejo comercial.",
     date: "Agosto 2026",
-    image: "https://images.unsplash.com/photo-1517524008697-84bbe3c3fd98?auto=format&fit=crop&q=80",
+    image: "https://images.unsplash.com/photo-1581092335397-9583eb92d232?auto=format&fit=crop&q=80",
     category: "Integración"
   }
 ];
