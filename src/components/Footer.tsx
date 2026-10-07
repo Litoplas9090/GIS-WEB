@@ -12,7 +12,7 @@ export default function Footer() {
           <a href="#services" className="hover:text-corporate-cyan transition">Servicios</a>
           <a href="/portal" className="hover:text-corporate-cyan transition">Portal Clientes</a>
         </div>
-        <p className="text-xs">&copy; {new Date().getFullYear()} GIS S.A.S. Todos los derechos reservados. Barranquilla, Colombia.</p>
+        <p className="text-xs">&copy; 2026 GIS S.A.S. Todos los derechos reservados. Barranquilla, Colombia.</p>
       </div>
     </footer>
   );
