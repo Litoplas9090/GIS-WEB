@@ -18,7 +18,7 @@ const slides = [
   {
     title: "TALENTO CERTIFICADO",
     subtitle: "Personal técnico calificado con amplia experiencia en el sector eléctrico, mecánico y electrónico.",
-    image: "/real/real_img_3.webp",
+    image: "/real/talento certificado.webp",
   }
 ];
 
@@ -56,7 +56,7 @@ export default function Hero() {
               <img 
                 src={slide.image}
                 alt={slide.title}
-                className="w-full h-full object-contain"
+                className="w-full h-full object-cover object-center"
               />
             </div>
           ))}
