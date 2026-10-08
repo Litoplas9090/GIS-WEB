@@ -91,13 +91,13 @@ export default function Hero() {
             
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 leading-tight tracking-tight heading drop-shadow-lg">
               {slides[currentIndex].title.split(" ").map((word, i, arr) => (
-                <span key={i} className={i === arr.length - 1 ? "text-gray-400" : ""}>
+                <span key={i} className="">
                   {word}{" "}
                 </span>
               ))}
             </h1>
             
-            <p className="text-xl md:text-2xl text-gray-300 mb-10 max-w-2xl font-light">
+            <p className="text-xl md:text-2xl text-white mb-10 max-w-2xl font-medium drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
               {slides[currentIndex].subtitle}
             </p>
             
