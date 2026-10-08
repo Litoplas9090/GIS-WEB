@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const montserrat = Montserrat({ subsets: ["latin"], variable: "--font-montserrat" });
 
 export const metadata: Metadata = {
-  title: "GIS S.A.S. | Grupo Ingeniería y Soluciones",
+  title: "GIS | Grupo Ingeniería y Soluciones",
   description: "Desarrollo de proyectos industriales, comerciales y residenciales bajo los más altos estándares. Ingeniería segura, eficiencia energética y talento certificado.",
   keywords: "Ingeniería industrial, Proyectos eléctricos, Proyectos mecánicos, Automatización, Energía solar, Mantenimiento industrial",
   icons: {

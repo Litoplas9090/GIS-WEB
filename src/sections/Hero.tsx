@@ -8,12 +8,12 @@ const slides = [
   {
     title: "INGENIERÍA SEGURA",
     subtitle: "Desarrollo de proyectos industriales, comerciales y residenciales bajo los más altos estándares.",
-    image: "/real/real_img_29.webp",
+    image: "/real/real_img_17.webp",
   },
   {
     title: "EFICIENCIA ENERGÉTICA",
     subtitle: "Soluciones sostenibles que optimizan recursos y protegen el medio ambiente.",
-    image: "/real/real_img_2.webp",
+    image: "/real/paneles_solares.webp",
   },
   {
     title: "TALENTO CERTIFICADO",
@@ -76,7 +76,7 @@ export default function Hero() {
             <div className="flex items-center gap-4 mb-6">
               <div className="h-[2px] w-12 bg-corporate-cyan"></div>
               <span className="text-corporate-cyan font-bold tracking-[0.2em] text-sm md:text-base uppercase">
-                GIS S.A.S.
+                GIS
               </span>
             </div>
             
@@ -94,7 +94,7 @@ export default function Hero() {
             
             <div className="flex flex-col sm:flex-row gap-4">
               <a 
-                href={`https://wa.me/573003707198?text=Hola,%20deseo%20recibir%20información%20sobre%20los%20servicios%20de%20GIS%20S.A.S.`}
+                href={`https://wa.me/573003707198?text=Hola,%20deseo%20recibir%20información%20sobre%20los%20servicios%20de%20GIS%20`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white text-corporate-black px-8 py-4 text-center font-bold text-sm tracking-widest uppercase hover:bg-corporate-cyan transition-all duration-300"

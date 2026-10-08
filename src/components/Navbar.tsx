@@ -34,7 +34,7 @@ export default function Navbar() {
         <div className="flex justify-between items-center">
           <div className="flex-shrink-0 flex items-center">
             <a href="#" className="flex items-center gap-2">
-              <img src="/logogis.png" alt="GIS S.A.S. Logo" className="h-32 md:h-48 w-auto object-contain drop-shadow-md" />
+              <img src="/logogis.png" alt="GIS Logo" className="h-32 md:h-48 w-auto object-contain drop-shadow-md" />
             </a>
           </div>
           

@@ -8,21 +8,21 @@ const services = [
   {
     id: "electronicos",
     title: "Proyectos Electrónicos",
-    image: "/real/real_img_4.webp",
+    image: "/real/proyectos electronico.webp",
     features: ["Automatización y control industrial", "Instrumentación y sensorización", "Sistemas de comunicación y redes", "Seguridad electrónica y cámaras", "Mantenimiento de PLCs"],
     desc: "Sistemas avanzados con cámaras, sensores y automatización para control industrial."
   },
   {
     id: "mecanicos",
     title: "Proyectos Mecánicos",
-    image: "/real/real_img_12.webp",
+    image: "/real/proyectos mecanico.webp",
     features: ["Mecánica industrial pesada", "Mantenimiento de rodamientos", "Motores de combustión interna", "Ventilación y climatización", "Sistemas hidráulicos y neumáticos"],
     desc: "Mantenimiento profundo de motores, rodamientos y sistemas de mecánica industrial."
   },
   {
     id: "electricos",
     title: "Proyectos Eléctricos",
-    image: "/real/real_img_2.webp",
+    image: "/real/proyectos electrico.webp",
     features: ["Montaje de tableros eléctricos", "Mantenimiento de subestaciones", "Gestión de energías renovables", "Líneas de media y baja tensión"],
     desc: "Montaje, mantenimiento de tableros industriales y soluciones en energías renovables."
   },

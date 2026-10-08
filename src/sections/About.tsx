@@ -43,7 +43,7 @@ export default function About() {
               Ingeniería especializada para tu industria
             </h3>
             <p className="text-gray-600 text-lg mb-6 leading-relaxed">
-              En <strong className="text-corporate-blue">Grupo Ingeniería y Soluciones S.A.S. (GIS)</strong>, somos una compañía dedicada a la prestación de servicios en las áreas eléctrica, electrónica, mecánica y metalmecánica. Contamos con un grupo de talento humano especializado, capaz de ofrecer soluciones integradas para proyectos industriales, comerciales y residenciales en la región Caribe.
+              En <strong className="text-corporate-blue">Grupo Ingeniería y Soluciones (GIS)</strong>, somos una compañía dedicada a la prestación de servicios en las áreas eléctrica, electrónica, mecánica y metalmecánica. Contamos con un grupo de talento humano especializado, capaz de ofrecer soluciones integradas para proyectos industriales, comerciales y residenciales en la región Caribe.
             </p>
             <div className="grid grid-cols-2 gap-6 mt-10">
               <div className="border-l-2 border-corporate-cyan pl-4">
