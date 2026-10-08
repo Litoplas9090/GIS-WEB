@@ -67,7 +67,7 @@ export default function Services() {
                   src={srv.image}
                   alt={srv.title}
                   fill
-                  className="object-cover transform group-hover:scale-110 transition-transform duration-700 ease-in-out"
+                  className={`transform group-hover:scale-110 transition-transform duration-700 ease-in-out ${srv.id === 'diseno' ? 'object-contain p-6 bg-gray-100' : 'object-cover'}`}
                 />
               </div>
               <div className="p-8 sm:w-3/5 flex flex-col justify-center">
