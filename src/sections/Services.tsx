@@ -27,6 +27,13 @@ const services = [
     desc: "Montaje, mantenimiento de tableros industriales y soluciones en energías renovables."
   },
   {
+    id: "diseno",
+    title: "Diseño Industrial y CAD",
+    image: "/real/diseno_industrial.webp",
+    features: ["Modelado 3D (SolidWorks, CATIA)", "Planos 2D (AutoCAD)", "Análisis (Inventor)", "Estructuras y Soldadura", "Sistemas Hidráulicos"],
+    desc: "Ingeniería de detalle y diseño especializado con los mejores software del mercado."
+  },
+  {
     id: "integracion",
     title: "Integración de Proyectos",
     image: "/real/integracion_ingenieria.webp",

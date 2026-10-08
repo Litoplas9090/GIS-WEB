@@ -2,10 +2,18 @@
 with open('src/sections/Services.tsx', 'r', encoding='utf-8') as f:
     content = f.read()
 
-content = content.replace('"/real/real_img_4.webp"', '"/real/proyectos electronico.webp"')
-content = content.replace('"/real/real_img_12.webp"', '"/real/proyectos mecanico.webp"')
-content = content.replace('"/real/real_img_2.webp"', '"/real/proyectos electrico.webp"')
+new_service = """  {
+    id: "diseno",
+    title: "Diseño Industrial y CAD",
+    image: "/real/diseno_industrial.webp",
+    features: ["Modelado 3D (SolidWorks, CATIA)", "Planos 2D (AutoCAD)", "Análisis (Inventor)", "Estructuras y Soldadura", "Sistemas Hidráulicos"],
+    desc: "Ingeniería de detalle y diseño especializado con los mejores software del mercado."
+  },
+  {
+    id: "integracion","""
+
+content = content.replace('  {\n    id: "integracion",', new_service)
 
 with open('src/sections/Services.tsx', 'w', encoding='utf-8') as f:
     f.write(content)
-print("Updated Services images")
+print("Updated Services")

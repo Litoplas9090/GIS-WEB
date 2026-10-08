@@ -35,7 +35,7 @@ export default function Clients() {
         
         <div className="flex w-max animate-[scroll_30s_linear_infinite]">
           {clients.map((client, index) => (
-            <div key={index} className="mx-8 flex items-center justify-center w-48 h-24 grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100">
+            <div key={index} className="mx-8 flex items-center justify-center w-48 h-24 transition-all duration-300 opacity-70 hover:opacity-100">
               <img src={client.logo} alt={client.name} className="max-w-full max-h-full object-contain" />
             </div>
           ))}
