@@ -29,7 +29,7 @@ const services = [
   {
     id: "integracion",
     title: "Integración de Proyectos",
-    image: "/real/real_img_15.webp",
+    image: "/real/integracion_ingenieria.webp",
     features: ["Eléctrica", "Mecánica", "Metalmecánica", "Electrónica"],
     desc: "Desarrollamos soluciones completas integrando múltiples disciplinas."
   }

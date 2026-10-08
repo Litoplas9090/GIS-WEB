@@ -64,7 +64,7 @@ export default function About() {
             transition={{ duration: 0.8 }}
             className="relative h-[500px] rounded-2xl overflow-hidden shadow-2xl"
           >
-            <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80" alt="Ingenieros especializados" className="absolute inset-0 w-full h-full object-cover" />
+            <img src="/real/about_gis.webp" alt="Ingenieros especializados" className="absolute inset-0 w-full h-full object-cover" />
             <div className="absolute inset-0 bg-corporate-blue/20 mix-blend-multiply" />
           </motion.div>
           
