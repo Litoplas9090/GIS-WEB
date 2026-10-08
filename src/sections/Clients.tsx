@@ -4,9 +4,18 @@ import { motion } from "framer-motion";
 export default function Clients() {
   // Los duplicamos varias veces para que el scroll infinito se vea sin huecos
   const baseClients = [
-    { name: "Alimentos Cárnicos", logo: "/clientes/alimentoscarnicos.png" },
+    { name: "Billares Del Caribe", logo: "/clientes/billares del caribe.png" },
+    { name: "Bmonte", logo: "/clientes/bmonte.png" },
+    { name: "Chilman", logo: "/clientes/chilman.png" },
+    { name: "Datecsa", logo: "/clientes/datecsa.png" },
+    { name: "Enermaq", logo: "/clientes/enermaq.png" },
+    { name: "Grupo Nutresa", logo: "/clientes/grupo nutresa.png" },
     { name: "Litoplas", logo: "/clientes/litoplas.png" },
+    { name: "Metalmecanica Poveda", logo: "/clientes/metalmecanica poveda.png" },
+    { name: "Muebles Y Diseños Rf", logo: "/clientes/muebles y diseños rf.png" },
     { name: "Polyrec", logo: "/clientes/polyrec.png" },
+    { name: "Termicom", logo: "/clientes/termicom.png" },
+    { name: "Ventures", logo: "/clientes/ventures.png" }
   ];
   
   const clients = [...baseClients, ...baseClients, ...baseClients, ...baseClients];

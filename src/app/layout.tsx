@@ -6,9 +6,12 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const montserrat = Montserrat({ subsets: ["latin"], variable: "--font-montserrat" });
 
 export const metadata: Metadata = {
-  title: "IntegralKey | Soluciones Inteligentes para Proteger, Conectar y Administrar",
-  description: "Transformamos la Seguridad, la Tecnología y la Gestión Empresarial en Soluciones Inteligentes en Barranquilla. Seguridad electrónica, desarrollo de software, domótica y administración de propiedad horizontal.",
-  keywords: "Seguridad electrónica Barranquilla, Desarrollo web Barranquilla, Domótica Barranquilla, Administración de propiedad horizontal Barranquilla",
+  title: "GIS S.A.S. | Grupo Ingeniería y Soluciones",
+  description: "Desarrollo de proyectos industriales, comerciales y residenciales bajo los más altos estándares. Ingeniería segura, eficiencia energética y talento certificado.",
+  keywords: "Ingeniería industrial, Proyectos eléctricos, Proyectos mecánicos, Automatización, Energía solar, Mantenimiento industrial",
+  icons: {
+    icon: '/favicon.ico',
+  },
 };
 
 export default function RootLayout({
