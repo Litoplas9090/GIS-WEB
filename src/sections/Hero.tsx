@@ -103,7 +103,7 @@ export default function Hero() {
             
             <div className="flex flex-col sm:flex-row gap-4">
               <a 
-                href={`https://wa.me/573003707198?text=Hola,%20deseo%20recibir%20información%20sobre%20los%20servicios%20de%20GIS%20`}
+                href="https://wa.me/573003707198?text=Hola,%20deseo%20recibir%20información%20sobre%20los%20servicios%20de%20Grupo%20Ingeniería%20y%20Soluciones."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white text-corporate-black px-8 py-4 text-center font-bold text-sm tracking-widest uppercase hover:bg-corporate-cyan transition-all duration-300"

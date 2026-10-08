@@ -34,7 +34,7 @@ export default function Navbar() {
         <div className="flex justify-between items-center">
           <div className="flex-shrink-0 flex items-center">
             <a href="#" className="flex items-center gap-2">
-              <img src="/logogis.png" alt="GIS Logo" className="h-32 md:h-48 w-auto object-contain drop-shadow-md" />
+              <img src="/logogis.png" alt="GIS Logo" className="h-40 md:h-60 w-auto object-contain bg-white/80 p-3 rounded-2xl backdrop-blur-md drop-shadow-[0_0_15px_rgba(255,255,255,0.5)]" />
             </a>
           </div>
           
@@ -43,7 +43,7 @@ export default function Navbar() {
               <a
                 key={link.name}
                 href={link.href}
-                className="text-gray-300 hover:text-corporate-cyan transition-colors text-sm font-medium uppercase tracking-wider font-bold"
+                className="text-white hover:text-corporate-cyan transition-colors text-sm uppercase tracking-wider font-extrabold drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]"
               >
                 {link.name}
               </a>
@@ -75,7 +75,7 @@ export default function Navbar() {
                   key={link.name}
                   href={link.href}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="block px-3 py-3 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-white/5"
+                  className="block px-3 py-3 rounded-md text-base font-medium text-white hover:text-corporate-cyan hover:bg-white/5 font-bold"
                 >
                   {link.name}
                 </a>
