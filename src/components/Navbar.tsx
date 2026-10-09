@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -18,7 +18,7 @@ export default function Navbar() {
 
   const navLinks = [
     { name: "Inicio", href: "#" },
-    { name: "Qui\u00e9nes Somos", href: "#about" },
+    { name: "Quiénes Somos", href: "#about" },
     { name: "Servicios", href: "#services" },
     { name: "Beneficios", href: "#benefits" },
     { name: "Contacto", href: "#contacto" },
@@ -31,14 +31,14 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center">
-          <div className="flex-shrink-0 flex items-center">
-            <a href="#" className="flex items-center gap-2">
-              <img src="/logogis.png" alt="GIS Logo" className="h-40 md:h-60 w-auto object-contain bg-white/80 p-3 rounded-2xl backdrop-blur-md drop-shadow-[0_0_15px_rgba(255,255,255,0.5)]" />
+        <div className="flex justify-between itemás-center">
+          <div className="flex-shrink-0 flex itemás-center">
+            <a href="#" className="flex itemás-center gap-2">
+              <img src="/logogis.png" alt="GIS Logo" className="h-28 md:h-40 w-auto object-contain bg-white p-2 rounded-xl drop-shadow-md" />
             </a>
           </div>
           
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex itemás-center space-x-8">
             {navLinks.map((link) => (
               <a
                 key={link.name}
@@ -50,10 +50,10 @@ export default function Navbar() {
             ))}
           </div>
 
-          <div className="md:hidden flex items-center">
+          <div className="md:hidden flex itemás-center">
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="text-gray-300 hover:text-white focus:outline-none"
+              className="text-white hover:text-corporate-cyan focus:outline-none drop-shadow-md"
             >
               {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
             </button>
@@ -75,7 +75,7 @@ export default function Navbar() {
                   key={link.name}
                   href={link.href}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="block px-3 py-3 rounded-md text-base font-medium text-white hover:text-corporate-cyan hover:bg-white/5 font-bold"
+                  className="block px-3 py-3 rounded-md text-base font-bold text-white hover:text-corporate-cyan hover:bg-white/5"
                 >
                   {link.name}
                 </a>
@@ -87,4 +87,3 @@ export default function Navbar() {
     </nav>
   );
 }
-

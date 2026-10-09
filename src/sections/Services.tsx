@@ -9,7 +9,7 @@ const services = [
     id: "electronicos",
     title: "Proyectos Electrónicos",
     image: "/real/proyectos electronico.webp",
-    features: ["Automatización y control industrial", "Instrumentación y sensorización", "Sistemas de comunicación y redes", "Seguridad electrónica y cámaras", "Mantenimiento de PLCs"],
+    features: ["Automatización y control industrial", "Instrumentación y sensorización", "Sistemas de comunicación y redes", "Seguridad electrónica y cámaras", "Mantenimiento de PLC"],
     desc: "Sistemas avanzados con cámaras, sensores y automatización para control industrial."
   },
   {

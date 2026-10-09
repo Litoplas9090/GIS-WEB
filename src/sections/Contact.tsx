@@ -3,34 +3,16 @@
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
-import { MapPin, Phone, Mail } from "lucide-react";
-
-const InstagramIcon = ({ className }: { className?: string }) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="24"
-    height="24"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-    className={className}
-  >
-    <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
-    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-    <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
-  </svg>
-);
+import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import { motion } from "framer-motion";
 
 const formSchema = z.object({
-  nombre: z.string().min(2, "El nombre es requerido"),
+  nombre: z.string().min(2, "El nombre es muy corto"),
   empresa: z.string().optional(),
-  correo: z.string().email("Correo electrónico inválido"),
+  email: z.string().email("Correo inválido"),
   telefono: z.string().min(7, "Teléfono inválido"),
   servicio: z.string().min(1, "Seleccione un servicio"),
-  mensaje: z.string().min(10, "El mensaje es muy corto")
+  mensaje: z.string().min(10, "El mensaje es muy corto"),
 });
 
 export default function Contact() {
@@ -39,75 +21,80 @@ export default function Contact() {
   });
 
   const onSubmit = (data: z.infer<typeof formSchema>) => {
-    const message = `Hola, mi nombre es ${data.nombre} ${data.empresa ? `de la empresa ${data.empresa}` : ''}.
-Me interesa el servicio de: ${data.servicio}.
-Mensaje: ${data.mensaje}
-
-Contacto:
-Tel: ${data.telefono}
-Correo: ${data.correo}`;
-    
+    const message = `Hola, soy ${data.nombre} ${data.empresa ? `de la empresa ${data.empresa}` : ""}.\n\nMe interesa el servicio de: ${data.servicio}\n\nMensaje: ${data.mensaje}\n\nMi correo es: ${data.email}`;
     const whatsappUrl = `https://wa.me/573003707198?text=${encodeURIComponent(message)}`;
-    window.open(whatsappUrl, '_blank');
+    window.open(whatsappUrl, "_blank");
   };
 
   return (
-    <section id="contacto" className="py-24 bg-corporate-blue text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="contacto" className="py-24 bg-corporate-black text-white relative">
+      <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1541888081696-6e4266fb85f3?auto=format&fit=crop&q=80')] opacity-5 bg-cover bg-center mix-blend-overlay" />
+      
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="text-center mb-16">
+          <h2 className="text-sm font-bold text-corporate-cyan tracking-widest uppercase mb-3">Contacto</h2>
+          <h3 className="text-3xl md:text-5xl font-bold heading mb-6">Trabajemos Juntos</h3>
+          <p className="text-gray-400 max-w-2xl mx-auto">
+            ¿Tiene un proyecto en mente? Nuestro equipo de ingenieros está listo para brindarle la mejor solución.
+          </p>
+        </div>
+
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-          
-          <div>
-            <h2 className="text-sm font-bold text-corporate-cyan tracking-widest uppercase mb-3">Contacto</h2>
-            <h3 className="text-3xl md:text-5xl font-bold heading mb-6 text-white">Iniciemos tu próximo proyecto</h3>
-            <p className="text-gray-300 mb-10 text-lg">
-              Déjanos tus datos o contáctanos directamente. Estamos listos para brindarte la mejor solución en ingeniería.
-            </p>
-            
-            <div className="space-y-6">
-              <div className="flex items-start">
-                <div className="w-12 h-12 rounded-full bg-corporate-cyan/10 flex items-center justify-center mr-4 shrink-0">
-                  <MapPin className="text-corporate-cyan" />
-                </div>
-                <div>
-                  <h4 className="font-bold text-white">Ubicación</h4>
-                  <p className="text-gray-300">Barranquilla, Colombia</p>
-                </div>
+          <motion.div 
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="space-y-8"
+          >
+            <div className="flex items-start gap-4">
+              <div className="bg-corporate-cyan/10 p-4 rounded-xl">
+                <MapPin className="text-corporate-cyan w-6 h-6" />
               </div>
-              <div className="flex items-start">
-                <div className="w-12 h-12 rounded-full bg-corporate-cyan/10 flex items-center justify-center mr-4 shrink-0">
-                  <Phone className="text-corporate-cyan" />
-                </div>
-                <div>
-                  <h4 className="font-bold text-white">Teléfonos / WhatsApp</h4>
-                  <p className="text-gray-300">3003707198 - 3001878739 - 3015768376</p>
-                </div>
-              </div>
-              <div className="flex items-start">
-                <div className="w-12 h-12 rounded-full bg-corporate-cyan/10 flex items-center justify-center mr-4 shrink-0">
-                  <Mail className="text-corporate-cyan" />
-                </div>
-                <div>
-                  <h4 className="font-bold text-white">Correos Electrónicos</h4>
-                  <p className="text-gray-300">gerencia@ingenieriagis.com</p>
-                  <p className="text-gray-300">ventas@ingenieriagis.com</p>
-                  <p className="text-gray-300">soporte@ingenieriagis.com</p>
-                </div>
-              </div>
-              <div className="flex items-start">
-                <div className="w-12 h-12 rounded-full bg-corporate-cyan/10 flex items-center justify-center mr-4 shrink-0">
-                  <InstagramIcon className="text-corporate-cyan" />
-                </div>
-                <div>
-                  <h4 className="font-bold text-white">Instagram</h4>
-                  <a href="https://www.instagram.com/ingenieriasgis?stkn=MTZvZDJrNnBlcnNpMQ==" target="_blank" rel="noopener noreferrer" className="text-corporate-cyan hover:underline">
-                    @ingenieriasgis
-                  </a>
-                </div>
+              <div>
+                <h4 className="text-xl font-bold mb-2">Ubicación Principal</h4>
+                <p className="text-gray-400">Barranquilla, Colombia<br/>Atención a toda la región Caribe</p>
               </div>
             </div>
-          </div>
 
-          <div className="bg-white/5 border border-white/10 p-8 rounded-2xl glass-dark">
+            <div className="flex items-start gap-4">
+              <div className="bg-corporate-cyan/10 p-4 rounded-xl">
+                <Phone className="text-corporate-cyan w-6 h-6" />
+              </div>
+              <div>
+                <h4 className="text-xl font-bold mb-2">Llámanos</h4>
+                <p className="text-gray-400">+57 300 370 7198<br/>+57 300 187 8739</p>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-4">
+              <div className="bg-corporate-cyan/10 p-4 rounded-xl">
+                <Mail className="text-corporate-cyan w-6 h-6" />
+              </div>
+              <div>
+                <h4 className="text-xl font-bold mb-2">Correo Electrónico</h4>
+                <p className="text-gray-400">proyectos@gissas.com</p>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-4">
+              <div className="bg-corporate-cyan/10 p-4 rounded-xl">
+                <Clock className="text-corporate-cyan w-6 h-6" />
+              </div>
+              <div>
+                <h4 className="text-xl font-bold mb-2">Horario de Atención</h4>
+                <p className="text-gray-400">Lunes a Viernes: 8:00 AM - 6:00 PM<br/>Sábados: 8:00 AM - 1:00 PM</p>
+              </div>
+            </div>
+          </motion.div>
+
+          <motion.div 
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="bg-[#050B14] p-8 rounded-2xl border border-white/10 shadow-2xl"
+          >
             <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
@@ -120,16 +107,16 @@ Correo: ${data.correo}`;
                   <input {...register("empresa")} className="w-full bg-[#021d38] border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-corporate-cyan transition-colors" />
                 </div>
               </div>
-              
+
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <label className="block text-sm font-medium text-gray-300 mb-2">Correo *</label>
-                  <input type="email" {...register("correo")} className="w-full bg-[#021d38] border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-corporate-cyan transition-colors" />
-                  {errors.correo && <span className="text-red-400 text-xs mt-1">{errors.correo.message}</span>}
+                  <label className="block text-sm font-medium text-gray-300 mb-2">Email *</label>
+                  <input {...register("email")} type="email" className="w-full bg-[#021d38] border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-corporate-cyan transition-colors" />
+                  {errors.email && <span className="text-red-400 text-xs mt-1">{errors.email.message}</span>}
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-gray-300 mb-2">Teléfono *</label>
-                  <input type="tel" {...register("telefono")} className="w-full bg-[#021d38] border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-corporate-cyan transition-colors" />
+                  <input {...register("telefono")} className="w-full bg-[#021d38] border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-corporate-cyan transition-colors" />
                   {errors.telefono && <span className="text-red-400 text-xs mt-1">{errors.telefono.message}</span>}
                 </div>
               </div>
@@ -157,7 +144,7 @@ Correo: ${data.correo}`;
                 Enviar Mensaje por WhatsApp
               </button>
             </form>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

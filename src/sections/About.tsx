@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { motion } from "framer-motion";
 import { Shield, Cpu, Activity, Lightbulb } from "lucide-react";
@@ -64,9 +64,7 @@ export default function About() {
             transition={{ duration: 0.8 }}
             className="relative h-[500px] rounded-2xl overflow-hidden shadow-2xl bg-gray-100"
           >
-            {/* Fondo estirado desenfocado para evitar espacios en blanco si la imagen no llena */}
             <img src="/real/about_gis.webp" alt="Fondo desenfocado" className="absolute inset-0 w-full h-full object-cover blur-2xl opacity-50 scale-110" />
-            
             <img src="/real/about_gis.webp" alt="Ingenieros especializados" className="absolute inset-0 w-full h-full object-contain drop-shadow-md z-10" />
             <div className="absolute inset-0 bg-corporate-blue/10 mix-blend-multiply z-20 pointer-events-none" />
           </motion.div>

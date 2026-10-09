@@ -1,69 +1,70 @@
-"use client";
-
-import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { ChevronDown } from "lucide-react";
-
-const faqs = [
-  {
-    q: "¿Qué incluye el servicio de mantenimiento predictivo?",
-    a: "Incluye diagnóstico, monitoreo de equipos mediante termografía, análisis de calidad de energía y reportes detallados para anticipar fallas y prolongar la vida útil de las instalaciones."
-  },
-  {
-    q: "¿Cuentan con personal certificado para trabajo en alturas?",
-    a: "Sí, todo nuestro personal técnico cuenta con certificaciones al día y equipos especializados para ejecutar proyectos con riesgos especiales como alturas, energías peligrosas y espacios confinados."
-  },
-  {
-    q: "¿Ofrecen alquiler de maquinaria para proyectos externos?",
-    a: "Absolutamente. Proveemos maquinaria pesada, plataformas unipersonales, andamios certificados y herramientas especializadas para la ejecución eficiente de sus proyectos."
-  },
-  {
-    q: "¿Cómo garantizan la eficiencia energética en las instalaciones?",
-    a: "Aplicamos ingeniería avanzada para el ahorro energético, optimizando recursos mediante el uso de tecnologías limpias, energías renovables y la mejora de sistemas electromecánicos."
-  }
-];
-
-export default function FAQ() {
-  const [open, setOpen] = useState<number | null>(null);
-
-  return (
-    <section className="py-24 bg-corporate-blue text-white relative overflow-hidden">
-      <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1541888086425-d81bb19240f5?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-10 mix-blend-overlay" />
-      
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="text-center mb-16">
-          <h2 className="text-sm font-bold text-corporate-cyan tracking-widest uppercase mb-3">Preguntas Frecuentes</h2>
-          <h3 className="text-3xl md:text-5xl font-bold heading text-white">Resolvemos tus dudas</h3>
-        </div>
-
-        <div className="space-y-4">
-          {faqs.map((faq, idx) => (
-            <div key={idx} className="border border-white/10 rounded-lg overflow-hidden bg-white/5 backdrop-blur-md">
-              <button
-                onClick={() => setOpen(open === idx ? null : idx)}
-                className="w-full flex items-center justify-between p-6 text-left focus:outline-none hover:bg-white/5 transition-colors"
-              >
-                <span className="font-bold text-lg text-white">{faq.q}</span>
-                <ChevronDown 
-                  className={`w-6 h-6 text-corporate-cyan transition-transform duration-300 shrink-0 ${open === idx ? "rotate-180" : ""}`} 
-                />
-              </button>
-              <AnimatePresence>
-                {open === idx && (
-                  <motion.div
-                    initial={{ height: 0, opacity: 0 }}
-                    animate={{ height: "auto", opacity: 1 }}
-                    exit={{ height: 0, opacity: 0 }}
-                    className="px-6 pb-6 text-gray-300"
-                  >
-                    <p>{faq.a}</p>
-                  </motion.div>
-                )}
-              </AnimatePresence>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
+ó"óuósóeó ócólóióeónótó"ó;ó
+ó
+óiómópóoórótó ó{ó óuósóeóSótóaótóeó ó}ó ófóróoómó ó"óróeóaócótó"ó;ó
+óiómópóoórótó ó{ó ómóoótóióoónó,ó óAónóiómóaótóeóPóróeósóeónócóeó ó}ó ófóróoómó ó"ófóróaómóeóró-ómóoótóióoónó"ó;ó
+óiómópóoórótó ó{ó óCóhóeóvóróoónóDóoówónó ó}ó ófóróoómó ó"ólóuócóiódóeó-óróeóaócótó"ó;ó
+ó
+ócóoónósótó ófóaóqósó ó=ó ó[ó
+ó ó ó{ó
+ó ó ó ó óqó:ó ó"ó¿óQóuóéó óiónócólóuóyóeó óeóló ósóeóróvóiócóióoó ódóeó ómóaónótóeónóiómóióeónótóoó ópóróeódóiócótóióvóoó?ó"ó,ó
+ó ó ó ó óaó:ó ó"óIónócólóuóyóeó ódóióaógónóóósótóiócóoó,ó ómóoónóiótóoóróeóoó ódóeó óeóqóuóiópóoósó ómóeódóióaónótóeó ótóeórómóoógóróaófóíóaó,ó óaónóáólóiósóiósó ódóeó ócóaólóiódóíóaódó ódóeó óeónóeórógóíóaó óyó óróeópóoórótóeósó ódóeótóaólólóaódóoósó ópóaóróaó óaónótóiócóiópóaóró ófóaólólóaósó óyó ópóróoólóoónógóaóró ólóaó óvóiódóíóaó óúótóióló ódóeó ólóaósó óiónósótóaólóaócóióoónóeósó.ó"ó
+ó ó ó}ó,ó
+ó ó ó{ó
+ó ó ó ó óqó:ó ó"ó¿óCóuóeónótóaónó ócóoónó ópóeórósóoónóaóló ócóeórótóiófóiócóaódóoó ópóaóróaó ótóróaóbóaójóoó óeónó óaólótóuóróaósó?ó"ó,ó
+ó ó ó ó óaó:ó ó"óSóíó,ó ótóoódóoó ónóuóeósótóróoó ópóeórósóoónóaóló ótóéócónóiócóoó ócóuóeónótóaó ócóoónó ócóeórótóiófóiócóaócóióoónóeósó óaóló ódóíóaó óyó óeóqóuóiópóoósó óeósópóeócóióaólóiózóaódóoósó ópóaóróaó óeójóeócóuótóaóró ópóróoóyóeócótóoósó ócóoónó óróióeósógóoósó óeósópóeócóióaólóeósó ócóoómóoó óaólótóuóróaósó,ó óeónóeórógóíóaósó ópóeólóiógóróoósóaósó óyó óeósópóaócóióoósó ócóoónófóiónóaódóoósó.ó"ó
+ó ó ó}ó,ó
+ó ó ó{ó
+ó ó ó ó óqó:ó ó"ó¿óOófóróeócóeónó óaólóqóuóiólóeóró ódóeó ómóaóqóuóiónóaóróióaó ópóaóróaó ópóróoóyóeócótóoósó óeóxótóeórónóoósó?ó"ó,ó
+ó ó ó ó óaó:ó ó"óAóbósóoólóuótóaómóeónótóeó.ó óPóróoóvóeóeómóoósó ómóaóqóuóiónóaóróióaó ópóeósóaódóíóaó,ó ópólóaótóaófóoórómóaósó óuónóiópóeórósóoónóaólóeósó,ó óaónódóíóaómóióoósó ócóeórótóiófóiócóaódóoósó óyó óhóeóróróaómóióeónótóaósó óeósópóeócóióaólóiózóaódóíóaósó ópóaóróaó ólóaó óeójóeócóuócóióóónó óeófóiócóióeónótóeó ódóeó ósóuósó ópóróoóyóeócótóoósó.ó"ó
+ó ó ó}ó,ó
+ó ó ó{ó
+ó ó ó ó óqó:ó ó"ó¿óCóóómóoó ógóaóróaónótóiózóaónó ólóaó óeófóiócóióeónócóióaó óeónóeórógóéótóiócóaó óeónó ólóaósó óiónósótóaólóaócóióoónóeósó?ó"ó,ó
+ó ó ó ó óaó:ó ó"óAópólóiócóaómóoósó óiónógóeónóióeóróíóaó óaóvóaónózóaódóíóaó ópóaóróaó óeóló óaóhóoóróróoó óeónóeórógóéótóiócóoó,ó óoópótóiómóiózóaónódóoó óróeócóuórósóoósó ómóeódóióaónótóeó óeóló óuósóoó ódóeó ótóeócónóoólóoógóíóaósó ólóiómópóióaósó,ó óeónóeórógóíóaósó óróeónóoóvóaóbólóeósó óyó ólóaó ómóeójóoóróaó ódóeó ósóiósótóeómóaósó óeólóeócótóróoómóeócóáónóiócóoósó.ó"ó
+ó ó ó}ó
+ó]ó;ó
+ó
+óeóxópóoórótó ódóeófóaóuólótó ófóuónócótóióoónó óFóAóQó(ó)ó ó{ó
+ó ó ócóoónósótó ó[óoópóeónó,ó ósóeótóOópóeónó]ó ó=ó óuósóeóSótóaótóeó<ónóuómóbóeóró ó|ó ónóuólóló>ó(ónóuólóló)ó;ó
+ó
+ó ó óróeótóuórónó ó(ó
+ó ó ó ó ó<ósóeócótóióoónó ócólóaósósóNóaómóeó=ó"ópóyó-ó2ó4ó óbógó-ócóoórópóoóróaótóeó-óbólóuóeó ótóeóxótó-ówóhóiótóeó óróeólóaótóióvóeó óoóvóeórófólóoówó-óhóiódódóeónó"ó>ó
+ó ó ó ó ó ó ó<ódóióvó ócólóaósósóNóaómóeó=ó"óaóbósóoólóuótóeó óiónósóeótó-ó0ó óbógó-ó[óuóróló(ó'óhótótópósó:ó/ó/óiómóaógóeósó.óuónósópólóaósóhó.ócóoómó/ópóhóoótóoó-ó1ó5ó4ó1ó8ó8ó8ó0ó8ó6ó4ó2ó5ó-ódó8ó1óbóbó1ó9ó2ó4ó0ófó5ó?óaóuótóoó=ófóoórómóaótó&ófóiótó=ócóróoópó&óqó=ó8ó0ó'ó)ó]ó óbógó-ócóoóvóeóró óbógó-ócóeónótóeóró óoópóaócóiótóyó-ó1ó0ó ómóióxó-óbólóeónódó-óoóvóeórólóaóyó"ó ó/ó>ó
+ó ó ó ó ó ó ó
+ó ó ó ó ó ó ó<ódóióvó ócólóaósósóNóaómóeó=ó"ómóaóxó-ówó-ó4óxóló ómóxó-óaóuótóoó ópóxó-ó4ó ósómó:ópóxó-ó6ó ólógó:ópóxó-ó8ó óróeólóaótóióvóeó ózó-ó1ó0ó"ó>ó
+ó ó ó ó ó ó ó ó ó<ódóióvó ócólóaósósóNóaómóeó=ó"ótóeóxótó-ócóeónótóeóró ómóbó-ó1ó6ó"ó>ó
+ó ó ó ó ó ó ó ó ó ó ó<óhó2ó ócólóaósósóNóaómóeó=ó"ótóeóxótó-ósómó ófóoónótó-óbóoólódó ótóeóxótó-ócóoórópóoóróaótóeó-ócóyóaónó ótóróaócókóiónógó-ówóiódóeósótó óuópópóeórócóaósóeó ómóbó-ó3ó"ó>óPóróeógóuónótóaósó óFóróeócóuóeónótóeósó<ó/óhó2ó>ó
+ó ó ó ó ó ó ó ó ó ó ó<óhó3ó ócólóaósósóNóaómóeó=ó"ótóeóxótó-ó3óxóló ómódó:ótóeóxótó-ó5óxóló ófóoónótó-óbóoólódó óhóeóaódóiónógó ótóeóxótó-ówóhóiótóeó"ó>óRóeósóoólóvóeómóoósó ótóuósó ódóuódóíóaósó<ó/óhó3ó>ó
+ó ó ó ó ó ó ó ó ó<ó/ódóióvó>ó
+ó
+ó ó ó ó ó ó ó ó ó<ódóióvó ócólóaósósóNóaómóeó=ó"ósópóaócóeó-óyó-ó4ó"ó>ó
+ó ó ó ó ó ó ó ó ó ó ó{ófóaóqósó.ómóaópó(ó(ófóaóqó,ó óiódóxó)ó ó=ó>ó ó(ó
+ó ó ó ó ó ó ó ó ó ó ó ó ó<ódóióvó ókóeóyó=ó{óiódóxó}ó ócólóaósósóNóaómóeó=ó"óbóoóródóeóró óbóoóródóeóró-ówóhóiótóeó/ó1ó0ó óróoóuónódóeódó-ólógó óoóvóeórófólóoówó-óhóiódódóeónó óbógó-ówóhóiótóeó/ó5ó óbóaócókódóróoópó-óbólóuóró-ómódó"ó>ó
+ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó<óbóuótótóoónó
+ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó óoónóCólóiócókó=ó{ó(ó)ó ó=ó>ó ósóeótóOópóeónó(óoópóeónó ó=ó=ó=ó óiódóxó ó?ó ónóuólóló ó:ó óiódóxó)ó}ó
+ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ócólóaósósóNóaómóeó=ó"ówó-ófóuólóló ófólóeóxó óiótóeómóáósó-ócóeónótóeóró ójóuósótóiófóyó-óbóeótówóeóeónó ópó-ó6ó ótóeóxótó-ólóeófótó ófóoócóuósó:óoóuótólóiónóeó-ónóoónóeó óhóoóvóeóró:óbógó-ówóhóiótóeó/ó5ó ótóróaónósóiótóióoónó-ócóoólóoórósó"ó
+ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó>ó
+ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó<ósópóaónó ócólóaósósóNóaómóeó=ó"ófóoónótó-óbóoólódó ótóeóxótó-ólógó ótóeóxótó-ówóhóiótóeó"ó>ó{ófóaóqó.óqó}ó<ó/ósópóaónó>ó
+ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó<óCóhóeóvóróoónóDóoówónó ó
+ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ócólóaósósóNóaómóeó=ó{ó`ówó-ó6ó óhó-ó6ó ótóeóxótó-ócóoórópóoóróaótóeó-ócóyóaónó ótóróaónósóiótóióoónó-ótóróaónósófóoórómó ódóuóróaótóióoónó-ó3ó0ó0ó ósóhóróiónókó-ó0ó ó$ó{óoópóeónó ó=ó=ó=ó óiódóxó ó?ó ó"óróoótóaótóeó-ó1ó8ó0ó"ó ó:ó ó"ó"ó}ó`ó}ó ó
+ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó/ó>ó
+ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó<ó/óbóuótótóoónó>ó
+ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó<óAónóiómóaótóeóPóróeósóeónócóeó>ó
+ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó{óoópóeónó ó=ó=ó=ó óiódóxó ó&ó&ó ó(ó
+ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó<ómóoótóióoónó.ódóióvó
+ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó óiónóiótóióaóló=ó{ó{ó óhóeóiógóhótó:ó ó0ó,ó óoópóaócóiótóyó:ó ó0ó ó}ó}ó
+ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó óaónóiómóaótóeó=ó{ó{ó óhóeóiógóhótó:ó ó"óaóuótóoó"ó,ó óoópóaócóiótóyó:ó ó1ó ó}ó}ó
+ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó óeóxóiótó=ó{ó{ó óhóeóiógóhótó:ó ó0ó,ó óoópóaócóiótóyó:ó ó0ó ó}ó}ó
+ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ócólóaósósóNóaómóeó=ó"ópóxó-ó6ó ópóbó-ó6ó ótóeóxótó-ógóróaóyó-ó3ó0ó0ó"ó
+ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó>ó
+ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó<ópó>ó{ófóaóqó.óaó}ó<ó/ópó>ó
+ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó<ó/ómóoótóióoónó.ódóióvó>ó
+ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó)ó}ó
+ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó<ó/óAónóiómóaótóeóPóróeósóeónócóeó>ó
+ó ó ó ó ó ó ó ó ó ó ó ó ó<ó/ódóióvó>ó
+ó ó ó ó ó ó ó ó ó ó ó)ó)ó}ó
+ó ó ó ó ó ó ó ó ó<ó/ódóióvó>ó
+ó ó ó ó ó ó ó<ó/ódóióvó>ó
+ó ó ó ó ó<ó/ósóeócótóióoónó>ó
+ó ó ó)ó;ó
+ó}ó
+ó
