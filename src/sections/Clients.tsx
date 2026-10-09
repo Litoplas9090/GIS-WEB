@@ -1,47 +1,44 @@
-ó"óuósóeó ócólóióeónótó"ó;ó
-óiómópóoórótó ó{ó ómóoótóióoónó ó}ó ófóróoómó ó"ófóróaómóeóró-ómóoótóióoónó"ó;ó
-ó
-óeóxópóoórótó ódóeófóaóuólótó ófóuónócótóióoónó óCólóióeónótósó(ó)ó ó{ó
-ó ó ó/ó/ó óLóoósó ódóuópólóiócóaómóoósó óvóaóróióaósó óvóeócóeósó ópóaóróaó óqóuóeó óeóló ósócóróoólóló óiónófóiónóiótóoó ósóeó óvóeóaó ósóiónó óhóuóeócóoósó
-ó ó ócóoónósótó óbóaósóeóCólóióeónótósó ó=ó ó[ó
-ó ó ó ó ó{ó ónóaómóeó:ó ó"óBóiólólóaóróeósó óDóeóló óCóaóróióbóeó"ó,ó ólóoógóoó:ó ó"ó/ócólóióeónótóeósó/óbóiólólóaóróeósó ódóeóló ócóaóróióbóeó.ópónógó"ó ó}ó,ó
-ó ó ó ó ó{ó ónóaómóeó:ó ó"óBómóoónótóeó"ó,ó ólóoógóoó:ó ó"ó/ócólóióeónótóeósó/óbómóoónótóeó.ópónógó"ó ó}ó,ó
-ó ó ó ó ó{ó ónóaómóeó:ó ó"óCóhóiólómóaónó"ó,ó ólóoógóoó:ó ó"ó/ócólóióeónótóeósó/ócóhóiólómóaónó.ópónógó"ó ó}ó,ó
-ó ó ó ó ó{ó ónóaómóeó:ó ó"óDóaótóeócósóaó"ó,ó ólóoógóoó:ó ó"ó/ócólóióeónótóeósó/ódóíóaótóeócósóaó.ópónógó"ó ó}ó,ó
-ó ó ó ó ó{ó ónóaómóeó:ó ó"óEónóeórómóaóqó"ó,ó ólóoógóoó:ó ó"ó/ócólóióeónótóeósó/óeónóeórómóaóqó.ópónógó"ó ó}ó,ó
-ó ó ó ó ó{ó ónóaómóeó:ó ó"óGóróuópóoó óNóuótóróeósóaó"ó,ó ólóoógóoó:ó ó"ó/ócólóióeónótóeósó/ógóróuópóoó ónóuótóróeósóaó.ópónógó"ó ó}ó,ó
-ó ó ó ó ó{ó ónóaómóeó:ó ó"óLóiótóoópólóaósó"ó,ó ólóoógóoó:ó ó"ó/ócólóióeónótóeósó/ólóiótóoópólóaósó.ópónógó"ó ó}ó,ó
-ó ó ó ó ó{ó ónóaómóeó:ó ó"óMóeótóaólómóeócóaónóiócóaó óPóoóvóeódóíóaó"ó,ó ólóoógóoó:ó ó"ó/ócólóióeónótóeósó/ómóeótóaólómóeócóaónóiócóaó ópóoóvóeódóíóaó.ópónógó"ó ó}ó,ó
-ó ó ó ó ó{ó ónóaómóeó:ó ó"óMóuóeóbólóeósó óYó óDóiósóeóñóoósó óRófó"ó,ó ólóoógóoó:ó ó"ó/ócólóióeónótóeósó/ómóuóeóbólóeósó óyó ódóiósóeóñóoósó órófó.ópónógó"ó ó}ó,ó
-ó ó ó ó ó{ó ónóaómóeó:ó ó"óPóoólóyóróeócó"ó,ó ólóoógóoó:ó ó"ó/ócólóióeónótóeósó/ópóoólóyóróeócó.ópónógó"ó ó}ó,ó
-ó ó ó ó ó{ó ónóaómóeó:ó ó"óTóeórómóiócóoómó"ó,ó ólóoógóoó:ó ó"ó/ócólóióeónótóeósó/ótóeórómóiócóoómó.ópónógó"ó ó}ó,ó
-ó ó ó ó ó{ó ónóaómóeó:ó ó"óVóeónótóuóróeósó"ó,ó ólóoógóoó:ó ó"ó/ócólóióeónótóeósó/óvóeónótóuóróeósó.ópónógó"ó ó}ó
-ó ó ó]ó;ó
-ó ó ó
-ó ó ócóoónósótó ócólóióeónótósó ó=ó ó[ó.ó.ó.óbóaósóeóCólóióeónótósó,ó ó.ó.ó.óbóaósóeóCólóióeónótósó,ó ó.ó.ó.óbóaósóeóCólóióeónótósó,ó ó.ó.ó.óbóaósóeóCólóióeónótósó]ó;ó
-ó
-ó ó óróeótóuórónó ó(ó
-ó ó ó ó ó<ósóeócótóióoónó ócólóaósósóNóaómóeó=ó"ópóyó-ó1ó6ó óbógó-ówóhóiótóeó óoóvóeórófólóoówó-óhóiódódóeónó"ó>ó
-ó ó ó ó ó ó ó<ódóióvó ócólóaósósóNóaómóeó=ó"ómóaóxó-ówó-ó7óxóló ómóxó-óaóuótóoó ópóxó-ó4ó ósómó:ópóxó-ó6ó ólógó:ópóxó-ó8ó ómóbó-ó1ó0ó ótóeóxótó-ócóeónótóeóró"ó>ó
-ó ó ó ó ó ó ó ó ó<óhó2ó ócólóaósósóNóaómóeó=ó"ótóeóxótó-ósómó ófóoónótó-óbóoólódó ótóeóxótó-ócóoórópóoóróaótóeó-ócóyóaónó ótóróaócókóiónógó-ówóiódóeósótó óuópópóeórócóaósóeó ómóbó-ó3ó"ó>óCóoónófóióaónózóaó<ó/óhó2ó>ó
-ó ó ó ó ó ó ó ó ó<óhó3ó ócólóaósósóNóaómóeó=ó"ótóeóxótó-ó3óxóló ómódó:ótóeóxótó-ó4óxóló ófóoónótó-óbóoólódó óhóeóaódóiónógó ótóeóxótó-ócóoórópóoóróaótóeó-óbólóuóeó"ó>ó
-ó ó ó ó ó ó ó ó ó ó óEósótóoósó ósóoónó óaólógóuónóoósó ódóeó ónóuóeósótóróoósó ócólóióeónótóeósó
-ó ó ó ó ó ó ó ó ó<ó/óhó3ó>ó
-ó ó ó ó ó ó ó<ó/ódóióvó>ó
-ó ó ó ó ó ó ó
-ó ó ó ó ó ó ó<ódóióvó ócólóaósósóNóaómóeó=ó"óróeólóaótóióvóeó ówó-ófóuólóló ófólóeóxó óiótóeómóáósó-ócóeónótóeóró"ó>ó
-ó ó ó ó ó ó ó ó ó<ódóióvó ócólóaósósóNóaómóeó=ó"óaóbósóoólóuótóeó ólóeófótó-ó0ó ówó-ó2ó4ó óhó-ófóuólóló óbógó-ógóróaódóióeónótó-ótóoó-óró ófóróoómó-ówóhóiótóeó ótóoó-ótóróaónósópóaóróeónótó ózó-ó1ó0ó"ó ó/ó>ó
-ó ó ó ó ó ó ó ó ó<ódóióvó ócólóaósósóNóaómóeó=ó"óaóbósóoólóuótóeó óróiógóhótó-ó0ó ówó-ó2ó4ó óhó-ófóuólóló óbógó-ógóróaódóióeónótó-ótóoó-óló ófóróoómó-ówóhóiótóeó ótóoó-ótóróaónósópóaóróeónótó ózó-ó1ó0ó"ó ó/ó>ó
-ó ó ó ó ó ó ó ó ó
-ó ó ó ó ó ó ó ó ó<ódóióvó ócólóaósósóNóaómóeó=ó"ófólóeóxó ówó-ómóaóxó óaónóiómóaótóeó-ó[ósócóróoólóló_ó3ó0ósó_ólóiónóeóaóró_óiónófóiónóiótóeó]ó"ó>ó
-ó ó ó ó ó ó ó ó ó ó ó{ócólóióeónótósó.ómóaópó(ó(ócólóióeónótó,ó óiónódóeóxó)ó ó=ó>ó ó(ó
-ó ó ó ó ó ó ó ó ó ó ó ó ó<ódóióvó ókóeóyó=ó{óiónódóeóxó}ó ócólóaósósóNóaómóeó=ó"ómóxó-ó8ó ófólóeóxó óiótóeómóáósó-ócóeónótóeóró ójóuósótóiófóyó-ócóeónótóeóró ówó-ó4ó8ó óhó-ó2ó4ó ótóróaónósóiótóióoónó-óaólóló ódóuóróaótóióoónó-ó3ó0ó0ó óoópóaócóiótóyó-ó7ó0ó óhóoóvóeóró:óoópóaócóiótóyó-ó1ó0ó0ó"ó>ó
-ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó<óiómógó ósórócó=ó{ócólóióeónótó.ólóoógóoó}ó óaólótó=ó{ócólóióeónótó.ónóaómóeó}ó ócólóaósósóNóaómóeó=ó"ómóaóxó-ówó-ófóuólóló ómóaóxó-óhó-ófóuólóló óoóbójóeócótó-ócóoónótóaóiónó"ó ó/ó>ó
-ó ó ó ó ó ó ó ó ó ó ó ó ó<ó/ódóióvó>ó
-ó ó ó ó ó ó ó ó ó ó ó)ó)ó}ó
-ó ó ó ó ó ó ó ó ó<ó/ódóióvó>ó
-ó ó ó ó ó ó ó<ó/ódóióvó>ó
-ó ó ó ó ó<ó/ósóeócótóióoónó>ó
-ó ó ó)ó;ó
-ó}ó
-ó
+"use client";
+import { motion } from "framer-motion";
+
+export default function Clients() {
+  const baseClients = [
+    { name: "Billares Del Caribe", logo: "/clientes/billares del caribe.png" },
+    { name: "Bmonte", logo: "/clientes/bmonte.png" },
+    { name: "Chilman", logo: "/clientes/chilman.png" },
+    { name: "Datecsa", logo: "/clientes/datecsa.png" },
+    { name: "Enermaq", logo: "/clientes/enermaq.png" },
+    { name: "Grupo Nutresa", logo: "/clientes/grupo nutresa.png" },
+    { name: "Litoplas", logo: "/clientes/litoplas.png" },
+    { name: "Metalmecánica Poveda", logo: "/clientes/metalmecánica poveda.png" },
+    { name: "Muebles Y Diseños Rf", logo: "/clientes/muebles y diseños rf.png" },
+    { name: "Polyrec", logo: "/clientes/polyrec.png" },
+    { name: "Termicom", logo: "/clientes/termicom.png" },
+    { name: "Ventures", logo: "/clientes/ventures.png" }
+  ];
+  
+  const clients = [...baseClients, ...baseClients, ...baseClients, ...baseClients];
+  return (
+    <section className="py-16 bg-white overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-10 text-center">
+        <h2 className="text-sm font-bold text-corporate-cyan tracking-widest uppercase mb-3">Confianza</h2>
+        <h3 className="text-3xl md:text-4xl font-bold heading text-corporate-blue">
+          Estos son algunos de nuestros clientes
+        </h3>
+      </div>
+      
+      <div className="relative w-full flex items-center">
+        <div className="absolute left-0 w-24 h-full bg-gradient-to-r from-white to-transparent z-10" />
+        <div className="absolute right-0 w-24 h-full bg-gradient-to-l from-white to-transparent z-10" />
+        
+        <div className="flex w-max animate-[scroll_30s_linear_infinite]">
+          {clients.map((client, index) => (
+            <div key={index} className="mx-8 flex items-center justify-center w-48 h-24 transition-all duration-300 opacity-70 hover:opacity-100">
+              <img src={client.logo} alt={client.name} className="max-w-full max-h-full object-contain" />
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}

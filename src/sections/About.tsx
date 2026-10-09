@@ -1,8 +1,6 @@
 "use client";
-
 import { motion } from "framer-motion";
 import { Shield, Cpu, Activity, Lightbulb } from "lucide-react";
-
 export default function About() {
   const values = [
     {
@@ -26,7 +24,6 @@ export default function About() {
       desc: "Personal técnico calificado y certificado en las diferentes áreas, apoyado por herramientas y equipos especializados."
     }
   ];
-
   return (
     <section id="about" className="py-24 bg-corporate-light text-corporate-blue">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -56,7 +53,6 @@ export default function About() {
               </div>
             </div>
           </motion.div>
-
           <motion.div 
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
@@ -70,12 +66,10 @@ export default function About() {
           </motion.div>
           
         </div>
-
         <div className="mt-20 text-center mb-12">
            <h3 className="text-3xl font-bold heading text-corporate-blue mb-4">Nuestros Pilares</h3>
            <p className="text-gray-600 max-w-2xl mx-auto">La base de nuestra operación y garantía de éxito en cada uno de los proyectos que emprendemos.</p>
         </div>
-
         <motion.div 
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}

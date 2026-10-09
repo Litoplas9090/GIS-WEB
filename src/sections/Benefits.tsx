@@ -1,10 +1,8 @@
 "use client";
-
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { MessageCircle, X } from "lucide-react";
-
 const equipment = [
   {
     title: "Andamios Uberlink",
@@ -27,10 +25,8 @@ const equipment = [
     desc: "Elevador vertical unipersonal JLG-36AM, compacto y eficiente para espacios reducidos."
   }
 ];
-
 export default function Benefits() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
-
   return (
     <section id="benefits" className="py-24 bg-white text-corporate-blue relative overflow-hidden border-t border-gray-100">
       <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-corporate-cyan/20 via-transparent to-transparent" />
@@ -55,7 +51,6 @@ export default function Benefits() {
                 </a>
             </div>
         </div>
-
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {equipment.map((item, idx) => (
             <motion.div
@@ -93,7 +88,6 @@ export default function Benefits() {
           ))}
         </div>
       </div>
-
       {/* Modal Fotografía Ficha */}
       <AnimatePresence>
         {selectedImage && (
@@ -128,7 +122,6 @@ export default function Benefits() {
           </motion.div>
         )}
       </AnimatePresence>
-
     </section>
   );
 }

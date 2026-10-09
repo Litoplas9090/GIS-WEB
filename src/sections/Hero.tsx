@@ -1,9 +1,7 @@
 "use client";
-
 import { useEffect, useState, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import useEmblaCarousel from "embla-carousel-react";
-
 const slides = [
   {
     title: "INGENIERÍA SEGURA",
@@ -21,16 +19,13 @@ const slides = [
     image: "/real/imagen3.webp",
   }
 ];
-
 export default function Hero() {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, duration: 40 });
   const [currentIndex, setCurrentIndex] = useState(0);
-
   const onSelect = useCallback(() => {
     if (!emblaApi) return;
     setCurrentIndex(emblaApi.selectedScrollSnap());
   }, [emblaApi]);
-
   useEffect(() => {
     if (!emblaApi) return;
     emblaApi.on("select", onSelect);
@@ -44,7 +39,6 @@ export default function Hero() {
       emblaApi.off("select", onSelect);
     };
   }, [emblaApi, onSelect]);
-
   return (
     <section id="hero" className="relative h-screen flex items-center justify-center overflow-hidden bg-corporate-black">
       <div className="absolute inset-0 z-0" ref={emblaRef}>
@@ -67,7 +61,6 @@ export default function Hero() {
           ))}
         </div>
       </div>
-
       <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full mt-20">
         <AnimatePresence mode="wait">
           <motion.div
@@ -116,7 +109,6 @@ export default function Hero() {
           </motion.div>
         </AnimatePresence>
       </div>
-
       <div className="absolute bottom-10 right-10 z-20 flex gap-3">
         {slides.map((_, index) => (
           <button

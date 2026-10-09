@@ -1,9 +1,7 @@
 "use client";
-
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-
 const services = [
   {
     id: "electronicos",
@@ -41,7 +39,6 @@ const services = [
     desc: "Desarrollamos soluciones completas integrando múltiples disciplinas."
   }
 ];
-
 export default function Services() {
   return (
     <section id="services" className="py-24 bg-[#050B14] text-white">
@@ -50,7 +47,6 @@ export default function Services() {
           <h2 className="text-sm font-bold text-corporate-cyan tracking-widest uppercase mb-3">Portafolio de Soluciones</h2>
           <h3 className="text-3xl md:text-5xl font-bold heading">Nuestras Áreas de Experiencia</h3>
         </div>
-
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
           {services.map((srv, idx) => (
             <motion.div

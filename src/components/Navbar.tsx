@@ -1,13 +1,10 @@
 "use client";
-
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
-
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
@@ -15,7 +12,6 @@ export default function Navbar() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
   const navLinks = [
     { name: "Inicio", href: "#" },
     { name: "Quiénes Somos", href: "#about" },
@@ -23,7 +19,6 @@ export default function Navbar() {
     { name: "Beneficios", href: "#benefits" },
     { name: "Contacto", href: "#contacto" },
   ];
-
   return (
     <nav
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
@@ -49,7 +44,6 @@ export default function Navbar() {
               </a>
             ))}
           </div>
-
           <div className="md:hidden flex itemás-center">
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -60,7 +54,6 @@ export default function Navbar() {
           </div>
         </div>
       </div>
-
       <AnimatePresence>
         {isMobileMenuOpen && (
           <motion.div
