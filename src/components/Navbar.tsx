@@ -1,10 +1,13 @@
 "use client";
+
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
+
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
@@ -12,13 +15,15 @@ export default function Navbar() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
   const navLinks = [
     { name: "Inicio", href: "#" },
     { name: "Quiénes Somos", href: "#about" },
     { name: "Servicios", href: "#services" },
-    { name: "Beneficios", href: "#benefits" },
+    { name: "Alquiler de Equipos", href: "#benefits" },
     { name: "Contacto", href: "#contacto" },
   ];
+
   return (
     <nav
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
@@ -26,14 +31,14 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between itemás-center">
-          <div className="flex-shrink-0 flex itemás-center">
-            <a href="#" className="flex itemás-center gap-2">
+        <div className="flex justify-between items-center">
+          <div className="flex-shrink-0 flex items-center">
+            <a href="#" className="flex items-center gap-2">
               <img src="/logogis.png" alt="GIS Logo" className="h-28 md:h-40 w-auto object-contain bg-white p-2 rounded-xl drop-shadow-md" />
             </a>
           </div>
           
-          <div className="hidden md:flex itemás-center space-x-8">
+          <div className="hidden md:flex items-center space-x-8">
             {navLinks.map((link) => (
               <a
                 key={link.name}
@@ -44,7 +49,8 @@ export default function Navbar() {
               </a>
             ))}
           </div>
-          <div className="md:hidden flex itemás-center">
+
+          <div className="md:hidden flex items-center">
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className="text-white hover:text-corporate-cyan focus:outline-none drop-shadow-md"
@@ -54,6 +60,7 @@ export default function Navbar() {
           </div>
         </div>
       </div>
+
       <AnimatePresence>
         {isMobileMenuOpen && (
           <motion.div
