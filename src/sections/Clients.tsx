@@ -10,8 +10,8 @@ export default function Clients() {
     { name: "Enermaq", logo: "/clientes/enermaq.png" },
     { name: "Grupo Nutresa", logo: "/clientes/grupo nutresa.png" },
     { name: "Litoplas", logo: "/clientes/litoplas.png" },
-    { name: "Metalmecánica Poveda", logo: "/clientes/metalmecánica poveda.png" },
-    { name: "Muebles Y Diseños Rf", logo: "/clientes/muebles y diseños rf.png" },
+    { name: "Metalmecánica Poveda", logo: "/clientes/metalmecanica poveda.png" },
+    { name: "Muebles Y Diseños Rf", logo: "/clientes/muebles y disenos rf.png" },
     { name: "Polyrec", logo: "/clientes/polyrec.png" },
     { name: "Termicom", logo: "/clientes/termicom.png" },
     { name: "Ventures", logo: "/clientes/ventures.png" }
